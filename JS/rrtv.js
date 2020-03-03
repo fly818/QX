@@ -1,3 +1,17 @@
+/*
+人人视频解锁原画
+
+[task_local]
+1 0 * * * hdcj.js
+
+[rewrite_local]
+#人人视频（加上了看电影的解锁）
+^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) url script-response-body QuanJS/JS/rrtv.js
+
+[mitm]
+hostname = api.rr.tv
+*/
+
 var body = $response.body;
 var url = $request.url;
 
