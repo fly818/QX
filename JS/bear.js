@@ -1,6 +1,6 @@
 /*
 #bear解锁
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body JS/bear.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body bear.js
 hostname = buy.itunes.apple.com
 */
 
