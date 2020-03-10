@@ -5,7 +5,7 @@
 Author: t.me/makexp
 Modified by zZPiglet
 
-Quantumult X (App Store:1.0.5+, TestFlight 190+):
+Quantumult X (TestFlight 190+):
 [task_local]
 1 0 * * * WeChatLottery.js
 or remote
@@ -13,6 +13,8 @@ or remote
 
 [rewrite_local]
 ^https:\/\/new\.api\.hdcj\.9w9\.com\/api\/sign\/sign url script-request-body WeChatLottery.js
+or remote
+^https:\/\/new\.api\.hdcj\.9w9\.com\/api\/sign\/sign url script-request-body https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery.js
 
 Surge 4.0+:
 [Script]
@@ -298,4 +300,3 @@ function compatibility() {
     }
     return { isRequest, isQuanX, isSurge, notify, write, read, post, end }
 };
-
