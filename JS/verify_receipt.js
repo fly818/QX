@@ -1,3 +1,10 @@
+/*
+hostname = buy.itunes.apple.com
+
+#订阅解锁(免费试用-取消订阅）
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body verify_receipt.js
+*/
+
 let body= $response.body;
 var obj = JSON.parse(body);
 if (body.indexOf("expires") !=-1) {
