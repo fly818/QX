@@ -4,8 +4,6 @@ hostname=app.api.versa-ai.com
 */
 
 
-
-
 let obj = JSON.parse($response.body);
 
 obj.result.paySuccess = true,
