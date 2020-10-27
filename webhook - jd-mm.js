@@ -6,7 +6,7 @@
  */
 
 const $ = new Env('Webhook触发Action');
-let ACTIONS_TRIGGER_TOKEN = '7acd0508adc7380d64b9b98d00e2f2f23a77ed2c';//Personal access tokens，申请教程:https://www.jianshu.com/p/bb82b3ad1d11 记得勾选repo权限就行
+let ACTIONS_TRIGGER_TOKEN = '8bf9b697db72d62b736413e42226ea7cf37274de';//Personal access tokens，申请教程:https://www.jianshu.com/p/bb82b3ad1d11 记得勾选repo权限就行
 let TRIGGER_KEYWORDS = 'xtg';//.github/workflows/路径里面yml文件里面repository_dispatch项目的types值，例如jd_fruit.yml里面的值为fruit
 let githubUser = 'fly818';//github用户名，例:lxk0301
 let repo = 'jd-mm';//需要触发的 Github Action 所在的仓库名称 例:scripts
