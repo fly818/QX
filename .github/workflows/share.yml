@@ -1,0 +1,28 @@
+name: share
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 0-15 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest      
+    steps:
+      - name: Checkout
+        run: |
+          git clone https://github.com/biu1biu/Scripts.git ~/Scripts
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: npm install
+        run: |
+          cd ~/Scripts
+          npm install
+          npm install cron
+          npm install request
+          npm install md5-node
+      - name: '运行 【youthshare】'
+        run: |
+          cd ~/Scripts   
+          node Task/youthshare.js
