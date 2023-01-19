@@ -1,3 +1,3 @@
 # Quantumult X 
 
-QX自用相关资源
+QX自用资源
