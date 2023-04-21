@@ -1,0 +1,129 @@
+{
+  "id": "id77.app.sub",
+  "name": "id77 脚本订阅",
+  "author": "@id77",
+  "icon": "https://avatars0.githubusercontent.com/u/9592236",
+  "repo": "https://github.com/id77/QuantumultX/tree/master",
+  "apps": [
+    {
+      "id": "yiLi",
+      "name": "伊利乳品",
+      "keys": ["id77_yiLi_cookies"],
+      "settings": [
+        {
+          "id": "id77_yiLi_cookies",
+          "name": "session",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "desc": "多账号，不支持单独管理，可以手动更改，不懂不建议修改"
+        }
+      ],
+      "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
+      "author": "@id77",
+      "repo": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
+      "icons": [
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png",
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
+      ],
+      "descs_html": [
+        "1、支持多账号，添加好配置，注册小程序后点个人中心，<a target=\"_blank\" href=\"https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js\">前往文件获取</a>",
+        "2、<img style=\"width: 120px\" src=\"https://raw.githubusercontent.com/id77/QuantumultX/master/img/yiLi_qr.png\" />",
+        "长按保存小程序码，用微信相机识别进入注册。",
+        "麻烦点一下助力，开发不易 ❤️",
+        "目前支持自动签到，每日阅读、分享任务",
+        "<br />",
+        "ps: 可以用几个微信弄多个账号，但需要手机号"
+      ]
+    },
+    {
+      "id": "id77_phone",
+      "name": "手机集",
+      "keys": ["zgyhsb_goodsId"],
+      "keys": ["zgyhsb_code"],
+      "keys": ["zgyhsb_userInfo"], 
+      "settings": [
+        {
+          "id": "zgyhsb_goodsId",
+          "name": "goodsId",
+          "val": "",
+          "type": "textarea",
+          "desc": "多个时，使用@间隔",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "zgyhsb_code",
+          "name": "code",
+          "val": "",
+          "type": "textarea",
+          "desc": "多个时，使用@间隔",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "zgyhsb_userInfo",
+          "name": "userInfo",
+          "val": "",
+          "type": "textarea",
+          "desc": "多个时，使用@间隔",
+          "autoGrow": true,
+          "rows": 2
+        }        
+      ],
+      "author": "@id77",
+      "icons": [
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png",
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+      ]
+    },
+    {
+      "id": "_163GameVip",
+      "name": "网易游戏会员",
+      "keys": ["id77_163GameVip"],
+      "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/163GameVip.js",
+      "author": "@id77",
+      "repo": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/163GameVip.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/163GameVip.png",
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/163GameVip.png"
+      ]
+    },
+    {
+      "id": "id77_ex",
+      "name": "通用重放脚本",
+      "keys": ["id77_ex_run_num", "id77_ex_request"],
+      "settings": [
+        {
+          "id": "id77_ex_run_num",
+          "name": "自动循环次数",
+          "val": "",
+          "type": "number"
+        },
+        {
+          "id": "id77_ex_interval",
+          "name": "间隔时间",
+          "val": "",
+          "type": "number",
+          "desc": "单位：毫秒"
+        },
+        {
+          "id": "id77_ex_request",
+          "name": "请求信息",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2
+        }
+      ],
+      "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/ex.task.js",
+      "author": "@id77",
+      "repo": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/ex.task.js",
+      "icons": [
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png",
+        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png"
+      ]
+    }
+  ]
+}
