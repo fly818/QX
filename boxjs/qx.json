@@ -10,7 +10,6 @@
       "name": "南方航空",
       "keys": [
         "NFHK_ACCOUNTS",
-        "debugMode"
       ],
       "descs_html": [],
       "settings": [
@@ -20,7 +19,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 5,
+          "rows": 6,
           "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
         }
       ],
