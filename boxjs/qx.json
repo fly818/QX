@@ -22,18 +22,11 @@
           "autoGrow": true,
           "rows": 5,
           "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
-        },
-        {
-          "id": "debugMode",
-          "name": "开启Debug模式",
-          "val": "false",
-          "type": "boolean",
-          "desc": "开启后，脚本将在日志中输出更详细的调试信息，方便排查问题。"
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/fly818/QX/master/icon/%E5%8D%97%E6%96%B9%E8%88%AA%E7%A9%BA.png",
-        "https://raw.githubusercontent.com/fly818/QX/master/icon/%E5%8D%97%E6%96%B9%E8%88%AA%E7%A9%BA.png"
+        "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png",
+        "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
       ],
       "author": "@mumu",
       "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
