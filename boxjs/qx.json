@@ -6,7 +6,7 @@
     "repo": "https://github.com/fly886/Script",
     "apps": [
         {
-            "id": "dyheadlist",
+            "id": "CSAIR",
             "name": "南方航空",
             "keys": [
                 "NFHK_ACCOUNTS"
@@ -20,7 +20,7 @@
                     "type": "textarea",
                     "autoGrow": false,
                     "rows": 8,
-                    "desc": "token列表 ([{"ID":"1...","token":"f...","timestamp":1717939200000}])"
+                    "desc": "token"
                 }
             ],
             "icons": [
