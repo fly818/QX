@@ -28,13 +28,6 @@
         "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
       ],
       "author": "@mumu",
-      "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
-      "scripts": [
-        {
-          "name": "南方航空签到",
-          "script": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js"
-        }
-      ]
     },
     {
       "id": "HR",
@@ -53,7 +46,7 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 6,
-          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
+          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]"
         },
         {
           "id": "cjwlhck",
@@ -62,7 +55,7 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 6,
-          "desc": "请在此处粘贴您的春茧未来荟账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
+          "desc": "请在此处粘贴您的春茧未来荟账号cookie"
         },
         {
           "id": "jjjck",
@@ -71,7 +64,16 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 6,
-          "desc": "请在此处粘贴您的999账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
+          "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）"
+        },
+        {
+          "id": "cjwlhck",
+          "name": "春茧未来荟",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的春茧未来荟账号cookie"
         }                
       ],
       "icons": [
