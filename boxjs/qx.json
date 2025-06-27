@@ -1,40 +1,40 @@
 {
-  "id": "mumu.app.sub",
-  "name": "mumu应用订阅",
-  "author": "@mumu",
-  "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
-  "repo": "https://github.com/fly818/QX",
-  "apps": [
-    {
-      "id": "CSAIR",
-      "name": "南方航空",
-      "keys": [
-        "NFHK_ACCOUNTS"
-      ],
-      "descs_html": [],
-      "settings": [
+    "id": "mumu.app.sub",
+    "name": "mumu应用订阅",
+    "author": "@mumu",
+    "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
+    "repo": "https://github.com/fly886/QX",
+    "apps": [
         {
-          "id": "NFHK_ACCOUNTS",
-          "name": "账号信息", // 更通用的名称
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true, // 建议改为 true
-          "rows": 5,
-          "desc": "请在此处粘贴您的南方航空账号JSON数组，每个账号包含ID、token和timestamp。示例：[{\"ID\":\"123...\",\"token\":\"abc...\",\"timestamp\":123...}]"
+            "id": "CSAIR",
+            "name": "南方航空",
+            "keys": [
+                "NFHK_ACCOUNTS"
+            ],
+            "descs_html": [],
+            "settings": [
+                {
+                    "id": "NFHK_ACCOUNTS",
+                    "name": "CK",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": false,
+                    "rows": 8,
+                    "desc": "CK 列表 (JSON 格式)"
+                }
+            ],
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+                "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+            ],
+            "author": "@mumu",
+            "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
+            "scripts": [
+                {
+                    "name": "刷音符",
+                    "script": "https://gitee.com/passerby-b/javascript/raw/master/dyjs.js"
+                }
+            ]
         }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
-        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-      ],
-      "author": "@mumu",
-      "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
-      "scripts": [
-        {
-          "name": "签到",
-          "script": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js"
-        }
-      ]
-    }
-  ]
+    ]
 }
