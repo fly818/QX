@@ -1,40 +1,48 @@
 {
-    "id": "mumu.app.sub",
-    "name": "mumu应用订阅",
-    "author": "@mumu",
-    "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
-    "repo": "https://github.com/fly886/QX",
-    "apps": [
+  "id": "mumu.app.sub",
+  "name": "mumu应用订阅",
+  "author": "@mumu",
+  "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
+  "repo": "https://github.com/fly886/QX",
+  "apps": [
+    {
+      "id": "CSAIR",
+      "name": "南方航空",
+      "keys": [
+        "NFHK_ACCOUNTS",
+        "debugMode"
+      ],
+      "descs_html": [],
+      "settings": [
         {
-            "id": "CSAIR",
-            "name": "南方航空",
-            "keys": [
-                "NFHK_ACCOUNTS"
-            ],
-            "descs_html": [],
-            "settings": [
-                {
-                    "id": "NFHK_ACCOUNTS",
-                    "name": "CK",
-                    "val": "",
-                    "type": "textarea",
-                    "autoGrow": true,
-                    "rows": 8,
-                    "desc": "CK 列表 (JSON 格式)"
-                }
-            ],
-            "icons": [
-                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
-                "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-            ],
-            "author": "@mumu",
-            "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
-            "scripts": [
-                {
-                    "name": "签到",
-                    "script": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js"
-                }
-            ]
+          "id": "NFHK_ACCOUNTS",
+          "name": "南方航空账号列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 5,
+          "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
+        },
+        {
+          "id": "debugMode",
+          "name": "开启Debug模式",
+          "val": "false",
+          "type": "boolean",
+          "desc": "开启后，脚本将在日志中输出更详细的调试信息，方便排查问题。"
         }
-    ]
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+      ],
+      "author": "@mumu",
+      "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
+      "scripts": [
+        {
+          "name": "南方航空签到",
+          "script": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js"
+        }
+      ]
+    }
+  ]
 }
