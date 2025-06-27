@@ -31,7 +31,7 @@
             "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
             "scripts": [
                 {
-                    "name": "签到查询",
+                    "name": "签到",
                     "script": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js"
                 }
             ]
