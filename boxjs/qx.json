@@ -18,7 +18,7 @@
                     "name": "CK",
                     "val": "",
                     "type": "textarea",
-                    "autoGrow": false,
+                    "autoGrow": true,
                     "rows": 8,
                     "desc": "CK 列表 (JSON 格式)"
                 }
@@ -28,11 +28,11 @@
                 "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
             ],
             "author": "@mumu",
-            "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
+            "repo": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js",
             "scripts": [
                 {
-                    "name": "刷音符",
-                    "script": "https://gitee.com/passerby-b/javascript/raw/master/dyjs.js"
+                    "name": "签到",
+                    "script": "https://gist.githubusercontent.com/fly818/59373b0802448aca53673ce63ddcd812/raw/nfhk.js"
                 }
             ]
         }
