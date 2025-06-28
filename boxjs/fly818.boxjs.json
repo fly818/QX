@@ -77,8 +77,8 @@
       "id": "boxjs_to_ql",
       "name": "boxjs同步ql",
       "author": "@WowYiJiu",
-      "repo": "https://github.com/WowYiJiu/Personal/blob/main/Script/boxjs_to_ql.js",
-      "script": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/boxjs_to_ql.js",
+      "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
+      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
       "keys": [
         "@ql.mute",
         "@ql.is_pwd",
