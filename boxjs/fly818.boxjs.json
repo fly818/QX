@@ -9,7 +9,8 @@
       "id": "CSAIR",
       "name": "南方航空",
       "keys": [
-        "NFHK_ACCOUNTS"
+        "NFHK_ACCOUNTS",
+        "NFHK_RAFFLEID"
       ],
       "descs_html": [],
       "settings": [
@@ -21,6 +22,15 @@
           "autoGrow": true,
           "rows": 6,
           "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
+        },
+        {
+          "id": "NFHK_RAFFLEID",
+          "name": "抽奖活动ID",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "活动ID使用后可以清空，脚本里默认的活动ID是权益专区抽奖ID，一般持续一个月，可以自行修改"
         }
       ],
       "icons": [
