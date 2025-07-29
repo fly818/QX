@@ -11,7 +11,7 @@
       "keys": [
         "NFHK_ACCOUNTS",
         "NFHK_RAFFLEID",
-        "NFHK_DEFAULT_RAFFLEID"     
+        "NFHK_DEFAULT_RAFFLEID"
       ],
       "descs_html": [],
       "settings": [
@@ -85,7 +85,7 @@
           "autoGrow": true,
           "rows": 6,
           "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）"
-        }              
+        }
       ],
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ydwx.png",
