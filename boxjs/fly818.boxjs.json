@@ -10,7 +10,8 @@
       "name": "南方航空",
       "keys": [
         "NFHK_ACCOUNTS",
-        "NFHK_RAFFLEID"
+        "NFHK_RAFFLEID",
+        "NFHK_DEFAULT_RAFFLEID",        
       ],
       "descs_html": [],
       "settings": [
@@ -24,13 +25,22 @@
           "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
         },
         {
-          "id": "NFHK_RAFFLEID",
-          "name": "抽奖活动ID",
+          "id": "NFHK_DEFAULT_RAFFLEID",
+          "name": "固定抽奖活动ID",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 6,
-          "desc": "活动ID使用后可以清空，脚本里默认的活动ID是权益专区抽奖ID，一般持续一个月，可以自行修改"
+          "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里"
+        },
+        {
+          "id": "NFHK_RAFFLEID",
+          "name": "临时抽奖活动ID",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "一次性活动ID,使用后可以清空"
         }
       ],
       "icons": [
