@@ -94,20 +94,21 @@
       "author": "@mumu"
     },
     {
-      "id": "boxjs_multi_ql_sync",
-      "name": "BoxJs多面板同步QL",
+      "id": "boxjs_to_ql_multi",
+      "name": "BoxJs多面板同步QL(兼容版)",
       "author": "@WowYiJiu & Gemini",
       "repo": "https://github.com/WowYiJiu/Personal/blob/main/Script/boxjs_to_ql.js",
       "script": "<YOUR_SCRIPT_URL>",
       "keys": [
-        "ql_multi_sync_mute",
-        "sync_env__key",
-        "ql_ips",
-        "ql_ports",
-        "ql_client_ids",
-        "ql_client_secrets"
+        "@ql.mute",
+        "@ql.sync_env__key",
+        "@ql.ip",
+        "@ql.port",
+        "@ql.client_id",
+        "@ql.client_secret"
       ],
       "descs_html": [
+        "<b>兼容旧版配置，可无痛升级。</b>",
         "本版本为多面板同步修改版，支持同时同步环境变量到多个青龙面板。",
         "<b>支持两种模式，请根据需求填写：</b>",
         "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
@@ -121,14 +122,14 @@
       ],
       "settings": [
         {
-          "id": "ql_multi_sync_mute",
+          "id": "@ql.mute",
           "name": "静音通知",
           "val": false,
           "type": "boolean",
           "desc": "同步完成后，是否关闭系统通知。"
         },
         {
-          "id": "sync_env__key",
+          "id": "@ql.sync_env__key",
           "name": "同步环境变量规则",
           "val": "",
           "type": "textarea",
@@ -138,44 +139,44 @@
           "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。"
         },
         {
-          "id": "ql_ips",
+          "id": "@ql.ip",
           "name": "青龙面板 IP 地址",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 2,
           "placeholder": "例如: 192.168.1.10@192.168.1.11",
-          "desc": "所有面板的IP地址，用'@'分隔。"
+          "desc": "支持多个IP，用'@'分隔。"
         },
         {
-          "id": "ql_ports",
+          "id": "@ql.port",
           "name": "青龙面板端口",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 2,
           "placeholder": "通用则填一个: 5700\n独立则填多个: 5700@5701",
-          "desc": "所有面板的端口。如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
-          "id": "ql_client_ids",
+          "id": "@ql.client_id",
           "name": "青龙面板 Client ID",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 2,
           "placeholder": "通用则填一个: a1b2c3d4\n独立则填多个: a1b2c3d4@e5f6g7h8",
-          "desc": "所有面板的Client ID。如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
-          "id": "ql_client_secrets",
+          "id": "@ql.client_secret",
           "name": "青龙面板 Client Secret",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 2,
           "placeholder": "通用则填一个: x1y2z3\n独立则填多个: x1y2z3@w4v5u6",
-          "desc": "所有面板的Client Secret。如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
       ]
     }
