@@ -1,0 +1,183 @@
+{
+  "id": "mumu.app.sub",
+  "name": "mumu应用订阅",
+  "author": "@mumu",
+  "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
+  "repo": "https://github.com/fly818/QX",
+  "apps": [
+    {
+      "id": "CSAIR",
+      "name": "南方航空",
+      "keys": [
+        "NFHK_ACCOUNTS",
+        "NFHK_DEFAULT_RAFFLEID",
+        "NFHK_RAFFLEID"
+      ],
+      "descs_html": [],
+      "settings": [
+        {
+          "id": "NFHK_ACCOUNTS",
+          "name": "南方航空账号列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
+        },
+        {
+          "id": "NFHK_DEFAULT_RAFFLEID",
+          "name": "固定抽奖活动ID",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 4,
+          "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里"
+        },
+        {
+          "id": "NFHK_RAFFLEID",
+          "name": "临时抽奖活动ID",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 4,
+          "desc": "一次性活动ID,使用后可以清空"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png",
+        "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
+      ],
+      "author": "@mumu"
+    },
+    {
+      "id": "HR",
+      "name": "华润系列",
+      "keys": [
+        "Ydwx",
+        "cjwlhck",
+        "jjjck"
+      ],
+      "descs_html": [],
+      "settings": [
+        {
+          "id": "Ydwx",
+          "name": "一点万象",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]"
+        },
+        {
+          "id": "cjwlhck",
+          "name": "春茧未来荟",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接"
+        },
+        {
+          "id": "jjjck",
+          "name": "999会员中心",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/fly818/QX/master/icon/ydwx.png",
+        "https://raw.githubusercontent.com/fly818/QX/master/icon/ydwx.png"
+      ],
+      "author": "@mumu"
+    },
+    {
+      "id": "boxjs_multi_ql_sync",
+      "name": "BoxJs多面板同步QL",
+      "author": "@WowYiJiu & Gemini",
+      "repo": "https://github.com/WowYiJiu/Personal/blob/main/Script/boxjs_to_ql.js",
+      "script": "<YOUR_SCRIPT_URL>",
+      "keys": [
+        "ql_multi_sync_mute",
+        "sync_env__key",
+        "ql_ips",
+        "ql_ports",
+        "ql_client_ids",
+        "ql_client_secrets"
+      ],
+      "descs_html": [
+        "本版本为多面板同步修改版，支持同时同步环境变量到多个青龙面板。",
+        "<b>支持两种模式，请根据需求填写：</b>",
+        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
+        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
+        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
+        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
+        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
+      ],
+      "settings": [
+        {
+          "id": "ql_multi_sync_mute",
+          "name": "静音通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "同步完成后，是否关闭系统通知。"
+        },
+        {
+          "id": "sync_env__key",
+          "name": "同步环境变量规则",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 5,
+          "placeholder": "boxjs变量名#ql变量名#ql备注\n-boxjs变量名#ql变量名#ql备注 (禁用)",
+          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。"
+        },
+        {
+          "id": "ql_ips",
+          "name": "青龙面板 IP 地址",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "placeholder": "例如: 192.168.1.10@192.168.1.11",
+          "desc": "所有面板的IP地址，用'@'分隔。"
+        },
+        {
+          "id": "ql_ports",
+          "name": "青龙面板端口",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "placeholder": "通用则填一个: 5700\n独立则填多个: 5700@5701",
+          "desc": "所有面板的端口。如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
+        },
+        {
+          "id": "ql_client_ids",
+          "name": "青龙面板 Client ID",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "placeholder": "通用则填一个: a1b2c3d4\n独立则填多个: a1b2c3d4@e5f6g7h8",
+          "desc": "所有面板的Client ID。如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
+        },
+        {
+          "id": "ql_client_secrets",
+          "name": "青龙面板 Client Secret",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "placeholder": "通用则填一个: x1y2z3\n独立则填多个: x1y2z3@w4v5u6",
+          "desc": "所有面板的Client Secret。如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
+        }
+      ]
+    }
+  ]
+}
