@@ -95,25 +95,24 @@
     },
     {
       "id": "boxjs_to_ql",
-      "name": "boxjs同步ql",
-      "author": "@WowYiJiu",
+      "name": "BoxJs同步QL",
+      "author": "@WowYiJiu & Gemini",
       "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
       "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
       "keys": [
         "@ql.mute",
-        "@ql.is_pwd",
         "@ql.sync_env__key",
         "@ql.ip",
+        "@ql.port",
         "@ql.client_id",
-        "@ql.client_secret",
-        "@ql.username",
-        "@ql.password"
+        "@ql.client_secret"
       ],
       "descs_html": [
-        "青龙 docker 的安装方式请移步 tg 频道",
+        "<b>支持两种模式，请根据需求填写：</b>",
+        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
+        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
         "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
-        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】",
-        "应用client_id,client_secret（openapi）方式；请去 设置->应用 中添加相关参数，优先以 openapi 方式同步"
+        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
       ],
       "icons": [
         "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
@@ -122,57 +121,60 @@
       "settings": [
         {
           "id": "@ql.mute",
-          "name": "静音",
+          "name": "静音通知",
           "val": false,
           "type": "boolean",
-          "desc": "同步时，是否执行通知提示"
-        },
-        {
-          "id": "@ql.is_pwd",
-          "name": "开启密码登陆",
-          "val": false,
-          "type": "boolean",
-          "desc": "同步时，是否使用密码登陆"
+          "desc": "同步完成后，是否关闭系统通知。"
         },
         {
           "id": "@ql.sync_env__key",
-          "name": "同步环境变量",
+          "name": "同步环境变量规则",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
           "rows": 5,
-          "placeholder": "boxjs环境变量名#ql环境变量名#ql备注(同步)\n-boxjs环境变量名#ql环境变量名#ql备注(不同步)",
-          "desc": "多个同步变量换行隔开，boxjs环境变量名前加-表示不同步"
+          "placeholder": "boxjs变量名#ql变量名#ql备注\n-boxjs变量名#ql变量名#ql备注 (禁用)",
+          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。"
         },
         {
           "id": "@ql.ip",
-          "name": "青龙登陆的域名或IP:端口号",
+          "name": "青龙面板 IP 地址",
           "val": "",
-          "type": "text"
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2,
+          "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
+          "desc": "支持多个IP，用'@'分隔。"
+        },
+        {
+          "id": "@ql.port",
+          "name": "青龙面板端口",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "placeholder": "通用则填一个: 5700\n独立则填多个: 5700@5701",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
           "id": "@ql.client_id",
-          "name": "应用 Client ID",
+          "name": "青龙面板 Client ID",
           "val": "",
-          "type": "text"
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "placeholder": "通用则填一个: a1b2c3d4\n独立则填多个: a1b2c3d4@e5f6g7h8",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
           "id": "@ql.client_secret",
-          "name": "应用 Client Secret",
+          "name": "青龙面板 Client Secret",
           "val": "",
-          "type": "text"
-        },
-        {
-          "id": "@ql.username",
-          "name": "账号",
-          "val": "",
-          "type": "text"
-        },
-        {
-          "id": "@ql.password",
-          "name": "密码",
-          "val": "",
-          "type": "text"
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "placeholder": "通用则填一个: x1y2z3\n独立则填多个: x1y2z3@w4v5u6",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
       ]
     }

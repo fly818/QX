@@ -94,11 +94,11 @@
       "author": "@mumu"
     },
     {
-      "id": "boxjs_to_ql_multi",
-      "name": "BoxJs多面板同步QL(兼容版)",
+      "id": "boxjs_to_ql",
+      "name": "BoxJs同步QL",
       "author": "@WowYiJiu & Gemini",
-      "repo": "https://github.com/WowYiJiu/Personal/blob/main/Script/boxjs_to_ql.js",
-      "script": "<YOUR_SCRIPT_URL>",
+      "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
+      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
       "keys": [
         "@ql.mute",
         "@ql.sync_env__key",
@@ -108,8 +108,6 @@
         "@ql.client_secret"
       ],
       "descs_html": [
-        "<b>兼容旧版配置，可无痛升级。</b>",
-        "本版本为多面板同步修改版，支持同时同步环境变量到多个青龙面板。",
         "<b>支持两种模式，请根据需求填写：</b>",
         "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
         "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
@@ -145,7 +143,7 @@
           "type": "textarea",
           "autoGrow": true,
           "rows": 2,
-          "placeholder": "例如: 192.168.1.10@192.168.1.11",
+          "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
           "desc": "支持多个IP，用'@'分隔。"
         },
         {
@@ -154,7 +152,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 2,
+          "rows": 1,
           "placeholder": "通用则填一个: 5700\n独立则填多个: 5700@5701",
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
@@ -164,7 +162,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 2,
+          "rows": 1,
           "placeholder": "通用则填一个: a1b2c3d4\n独立则填多个: a1b2c3d4@e5f6g7h8",
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
@@ -174,7 +172,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 2,
+          "rows": 1,
           "placeholder": "通用则填一个: x1y2z3\n独立则填多个: x1y2z3@w4v5u6",
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
