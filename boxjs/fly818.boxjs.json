@@ -95,7 +95,7 @@
     },
     {
       "id": "boxjs_to_ql",
-      "name": "BoxJs同步QL",
+      "name": "boxjs同步ql",
       "author": "@WowYiJiu & Gemini",
       "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
       "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
