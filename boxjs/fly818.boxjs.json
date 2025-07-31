@@ -10,8 +10,8 @@
       "name": "南方航空",
       "keys": [
         "NFHK_ACCOUNTS",
-        "NFHK_RAFFLEID",
-        "NFHK_DEFAULT_RAFFLEID"
+        "NFHK_DEFAULT_RAFFLEID",
+        "NFHK_RAFFLEID"
       ],
       "descs_html": [],
       "settings": [
