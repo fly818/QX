@@ -30,7 +30,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 6,
+          "rows": 4,
           "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里"
         },
         {
@@ -39,7 +39,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 6,
+          "rows": 4,
           "desc": "一次性活动ID,使用后可以清空"
         }
       ],
