@@ -94,6 +94,30 @@
       "author": "@mumu"
     },
     {
+      "id": "qc",
+      "name": "雀巢",
+      "keys": [
+        "NESTLE_TOKEN"
+      ],
+      "descs_html": [],
+      "settings": [
+        {
+          "id": "NESTLE_TOKEN",
+          "name": "雀巢会员",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": ""
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
+      ],
+      "author": "@mumu"
+    },
+    {
       "id": "boxjs_to_ql",
       "name": "boxjs同步ql",
       "author": "Gemini",
@@ -176,63 +200,6 @@
           "placeholder": "通用则填一个: x1y2z3\n独立则填多个: x1y2z3@w4v5u6",
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
-      ]
-    },
-    {
-      "id": "updateXyCookie",
-      "name": "更新闲鱼Cookie",
-      "keys": [
-        "autoReply_url",
-        "autoReply_account_id",
-        "autoReply_xianyu_cookie",
-        "autoReply_username",
-        "autoReply_password"
-      ],
-      "settings": [
-        {
-          "id": "autoReply_url",
-          "name": "自动回复网页地址",
-          "val": "",
-          "type": "text"
-        },
-        {
-          "id": "autoReply_account_id",
-          "name": "闲鱼账户ID",
-          "val": "",
-          "type": "text"
-        },
-        {
-          "id": "autoReply_xianyu_cookie",
-          "name": "闲鱼cookie",
-          "val": "",
-          "type": "text"
-          "autoGrow": true,
-          "rows": 6,          
-        },
-        {
-          "id": "autoReply_username",
-          "name": "网页账户",
-          "val": "",
-          "type": "text"
-        },
-        {
-          "id": "autoReply_password",
-          "name": "网页密码",
-          "val": "",
-          "type": "text"
-        }
-      ],
-      "scripts": [
-        {
-          "name": "自动更新闲鱼cookie",
-          "script": "https://raw.githubusercontent.com/CreamK/script/refs/heads/master/script/updateXyCookie.js"
-        }
-      ],
-      "author": "@CreamK",
-      "repo": "https://github.com/CreamK/Scripts",
-      "icons": [
-        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png",
-        "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
       ]
     }
   ]
