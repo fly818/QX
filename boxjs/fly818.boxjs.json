@@ -13,7 +13,9 @@
         "NFHK_DEFAULT_RAFFLEID",
         "NFHK_RAFFLEID"
       ],
-      "descs_html": [],
+      "descs_html": [
+        "<b>建议使用验证码模式登陆</b>",
+      ],
       "settings": [
         {
           "id": "NFHK_ACCOUNTS",
@@ -90,6 +92,29 @@
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ydwx.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ydwx.png"
+      ],
+      "author": "@mumu"
+    },
+    {
+      "id": "qc",
+      "name": "雀巢",
+      "keys": [
+        "NESTLE_TOKEN"
+      ],
+      "settings": [
+        {
+          "id": "NESTLE_TOKEN",
+          "name": "雀巢会员",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": ""
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
       ],
       "author": "@mumu"
     },
