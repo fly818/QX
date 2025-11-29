@@ -150,9 +150,11 @@
     },
     {
       "id": "shymt",
-      "name": "上海杨浦",
+      "name": "上海云媒体",
       "keys": [
-        "shyp"
+        "shyp",
+        "shyp_sku",
+        "shyp_accounts"
       ],
       "settings": [
         {
@@ -163,6 +165,24 @@
           "autoGrow": true,
           "rows": 6,
           "desc": ""
+        },
+        {
+          "id": "shyp_sku",
+          "name": "商城兑换商品",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": ""
+        },
+        {
+          "id": "shyp_accounts",
+          "name": "杨浦积分商城",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "有效期一个月"
         }
       ],
       "icons": [
