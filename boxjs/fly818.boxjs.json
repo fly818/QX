@@ -172,7 +172,7 @@
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 6,
+          "rows": 2,
           "desc": ""
         },
         {
