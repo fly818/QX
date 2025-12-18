@@ -9,15 +9,15 @@
       "id": "CSAIR",
       "name": "南方航空",
       "keys": [
+        "NFHK_ACCOUNTS",
+        "NFHK_DEFAULT_RAFFLEID",
+        "NFHK_RAFFLEID",
         "nfhk_debug",
         "nfhk_sign_in",
         "nfhk_concurrent",
         "nfhk_shuffle",
         "nfhk_log_prize",
         "nfhk_auto_clean",
-        "NFHK_ACCOUNTS",
-        "NFHK_DEFAULT_RAFFLEID",
-        "NFHK_RAFFLEID",
         "nfhk_expired_keywords",
         "nfhk_expired_codes"
       ],
@@ -37,14 +37,14 @@
           "name": "开启每日签到",
           "val": "false",
           "type": "boolean",
-          "desc": "按需开启，签到活动上线再打开"
+          "desc": "默认关闭以降低风控，需要请开启"
         },
         {
           "id": "nfhk_concurrent",
           "name": "开启并发执行",
           "val": "false",
           "type": "boolean",
-          "desc": "多账号同时运行，建议保持关闭（顺序执行）"
+          "desc": "多账号同时运行，速度快但风险高，建议保持关闭（顺序执行）"
         },
         {
           "id": "nfhk_shuffle",
@@ -83,18 +83,16 @@
           "type": "textarea",
           "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里",
           "rows": 5,
-          "autoGrow": true,
-          "persistentHint": true
+          "autoGrow": true
         },
         {
           "id": "NFHK_RAFFLEID",
           "name": "临时抽奖活动ID",
           "val": "",
           "type": "textarea",
-          "desc": "长期活动自行粘贴到上方",
+          "desc": "一次性活动ID,使用后可以清空",
           "rows": 5,
-          "autoGrow": true,
-          "persistentHint": true
+          "autoGrow": true
         },
         {
           "id": "nfhk_expired_keywords",
@@ -102,7 +100,7 @@
           "val": "[\"已结束\", \"奖品已抽完\", \"不在活动时间\", \"活动未开始\"]",
           "type": "textarea",
           "desc": "自定义识别过期的关键词，支持JSON数组或逗号分隔字符串",
-          "rows": 5,
+          "rows": 2,
           "autoGrow": true
         },
         {
@@ -111,7 +109,7 @@
           "val": "[1105, \"0130\", \"1105\"]",
           "type": "textarea",
           "desc": "自定义识别过期的错误码，支持JSON数组或逗号分隔字符串",
-          "rows": 5,
+          "rows": 2,
           "autoGrow": true
         }
       ],
@@ -139,61 +137,58 @@
           "name": "一点万象",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]",
-          "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]"
         },
         {
           "id": "cjwlhck",
           "name": "春茧未来荟",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接",
-          "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接"
         },
         {
           "id": "jjjck",
           "name": "999会员中心",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）",
-          "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）"
         },
         {
           "id": "wtwlh",
           "name": "文体未来荟",
           "val": "",
           "type": "textarea",
-          "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 6
         },
         {
           "id": "oleck",
           "name": "ole超市",
           "val": "",
           "type": "textarea",
-          "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 6
         },
         {
           "id": "hrtwx",
           "name": "华润通",
           "val": "",
           "type": "textarea",
-          "desc": "华润通会风控出现腾讯滑块，建议手动",
-          "rows": 5,
           "autoGrow": true,
-          "persistentHint": true
+          "rows": 6
         }
       ],
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
       ],
-      "author": "@mumu",
-      "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
+      "author": "@mumu"
     },
     {
       "id": "qc",
@@ -207,24 +202,23 @@
           "name": "雀巢会员",
           "val": "",
           "type": "textarea",
-          "desc": "CK有效期30天",
-          "rows": 5,
           "autoGrow": true,
-          "persistentHint": true
+          "rows": 6
         }
       ],
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
       ],
-      "author": "@mumu",
-      "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
+      "author": "@mumu"
     },
     {
       "id": "shymt",
       "name": "上海云媒体",
       "keys": [
-        "shyp"
+        "shyp",
+        "shyp_sku",
+        "shyp_accounts"
       ],
       "settings": [
         {
@@ -232,18 +226,32 @@
           "name": "上海杨浦",
           "val": "",
           "type": "textarea",
-          "desc": "有效期很长",
-          "rows": 5,
           "autoGrow": true,
-          "persistentHint": true
+          "rows": 6
+        },
+        {
+          "id": "shyp_sku",
+          "name": "商城兑换商品",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 2
+        },
+        {
+          "id": "shyp_accounts",
+          "name": "杨浦积分商城",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "有效期一个月"
         }
       ],
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
       ],
-      "author": "@mumu",
-      "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
+      "author": "@mumu"
     },
     {
       "id": "boxjs_to_ql",
@@ -274,7 +282,7 @@
         {
           "id": "@ql.mute",
           "name": "静音通知",
-          "val": "false",
+          "val": false,
           "type": "boolean",
           "desc": "同步完成后，是否关闭系统通知。"
         },
@@ -283,54 +291,52 @@
           "name": "同步环境变量规则",
           "val": "",
           "type": "textarea",
-          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。\n",
-          "placeholder": "boxjs变量名#ql变量名#ql备注 -boxjs变量名#ql变量名#ql备注 (禁用)",
-          "rows": 5,
           "autoGrow": true,
-          "persistentHint": true
+          "rows": 5,
+          "placeholder": "boxjs变量名#ql变量名#ql备注\n-boxjs变量名#ql变量名#ql备注 (禁用)",
+          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。"
         },
         {
           "id": "@ql.ip",
           "name": "青龙面板 IP 地址",
           "val": "",
           "type": "textarea",
-          "desc": "支持多个IP，用'@'分隔。",
+          "autoGrow": true,
+          "rows": 2,
           "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
-          "rows": 3,
-          "autoGrow": true
+          "desc": "支持多个IP，用'@'分隔。"
         },
         {
           "id": "@ql.port",
           "name": "青龙面板端口",
           "val": "",
           "type": "textarea",
-          "desc": "如果通用，只需填写一个。\n如果多个，用'@'分隔并与IP顺序对应。",
-          "placeholder": "通用则填一个: 5700，多个用@连接: 5700@5701",
+          "autoGrow": true,
           "rows": 1,
-          "autoGrow": true
+          "placeholder": "通用则填一个: 5700\n独立则填多个: 5700@5701",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
           "id": "@ql.client_id",
           "name": "青龙面板 Client ID",
           "val": "",
           "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
-          "placeholder": "通用则填一个: a1b2c3d4多个用@连接: a1b2c3d4@e5f6g7h8",
-          "rows": 2,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 1,
+          "placeholder": "通用则填一个: a1b2c3d4\n独立则填多个: a1b2c3d4@e5f6g7h8",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
           "id": "@ql.client_secret",
           "name": "青龙面板 Client Secret",
           "val": "",
           "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
-          "placeholder": "通用则填一个: x1y2z3多个用@连接: x1y2z3@w4v5u6",
-          "rows": 2,
-          "autoGrow": true
+          "autoGrow": true,
+          "rows": 1,
+          "placeholder": "通用则填一个: x1y2z3\n独立则填多个: x1y2z3@w4v5u6",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
-      ],
-      "icon": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png"
+      ]
     }
   ]
 }
