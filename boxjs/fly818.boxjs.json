@@ -1,4 +1,5 @@
 {
+  "id": "",
   "name": "mumu应用订阅",
   "author": "@mumu",
   "repo": "https://github.com/fly818/QX",
@@ -69,6 +70,7 @@
         {
           "id": "NFHK_ACCOUNTS",
           "name": "南方航空账号列表",
+          "val": "",
           "type": "textarea",
           "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]",
           "rows": 5,
@@ -77,18 +79,20 @@
         {
           "id": "NFHK_DEFAULT_RAFFLEID",
           "name": "固定抽奖活动ID",
+          "val": "",
           "type": "textarea",
           "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里",
-          "rows": 2,
+          "rows": 5,
           "autoGrow": true,
           "persistentHint": true
         },
         {
           "id": "NFHK_RAFFLEID",
           "name": "临时抽奖活动ID",
+          "val": "",
           "type": "textarea",
           "desc": "长期活动自行粘贴到上方",
-          "rows": 3,
+          "rows": 5,
           "autoGrow": true,
           "persistentHint": true
         },
@@ -98,7 +102,7 @@
           "val": "[\"已结束\", \"奖品已抽完\", \"不在活动时间\", \"活动未开始\"]",
           "type": "textarea",
           "desc": "自定义识别过期的关键词，支持JSON数组或逗号分隔字符串",
-          "rows": 3,
+          "rows": 5,
           "autoGrow": true
         },
         {
@@ -107,7 +111,7 @@
           "val": "[1105, \"0130\", \"1105\"]",
           "type": "textarea",
           "desc": "自定义识别过期的错误码，支持JSON数组或逗号分隔字符串",
-          "rows": 2,
+          "rows": 5,
           "autoGrow": true
         }
       ],
@@ -133,6 +137,7 @@
         {
           "id": "Ydwx",
           "name": "一点万象",
+          "val": "",
           "type": "textarea",
           "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]",
           "rows": 5,
@@ -141,6 +146,7 @@
         {
           "id": "cjwlhck",
           "name": "春茧未来荟",
+          "val": "",
           "type": "textarea",
           "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接",
           "rows": 5,
@@ -149,6 +155,7 @@
         {
           "id": "jjjck",
           "name": "999会员中心",
+          "val": "",
           "type": "textarea",
           "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）",
           "rows": 5,
@@ -157,6 +164,7 @@
         {
           "id": "wtwlh",
           "name": "文体未来荟",
+          "val": "",
           "type": "textarea",
           "rows": 5,
           "autoGrow": true
@@ -164,6 +172,7 @@
         {
           "id": "oleck",
           "name": "ole超市",
+          "val": "",
           "type": "textarea",
           "rows": 5,
           "autoGrow": true
@@ -171,6 +180,7 @@
         {
           "id": "hrtwx",
           "name": "华润通",
+          "val": "",
           "type": "textarea",
           "desc": "华润通会风控出现腾讯滑块，建议手动",
           "rows": 5,
@@ -195,6 +205,7 @@
         {
           "id": "NESTLE_TOKEN",
           "name": "雀巢会员",
+          "val": "",
           "type": "textarea",
           "desc": "CK有效期30天",
           "rows": 5,
@@ -219,6 +230,7 @@
         {
           "id": "shyp",
           "name": "上海杨浦",
+          "val": "",
           "type": "textarea",
           "desc": "有效期很长",
           "rows": 5,
@@ -269,6 +281,7 @@
         {
           "id": "@ql.sync_env__key",
           "name": "同步环境变量规则",
+          "val": "",
           "type": "textarea",
           "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。\n",
           "placeholder": "boxjs变量名#ql变量名#ql备注 -boxjs变量名#ql变量名#ql备注 (禁用)",
@@ -279,24 +292,27 @@
         {
           "id": "@ql.ip",
           "name": "青龙面板 IP 地址",
+          "val": "",
           "type": "textarea",
           "desc": "支持多个IP，用'@'分隔。",
           "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
-          "rows": 5,
+          "rows": 3,
           "autoGrow": true
         },
         {
           "id": "@ql.port",
           "name": "青龙面板端口",
+          "val": "",
           "type": "textarea",
           "desc": "如果通用，只需填写一个。\n如果多个，用'@'分隔并与IP顺序对应。",
           "placeholder": "通用则填一个: 5700，多个用@连接: 5700@5701",
-          "rows": 2,
+          "rows": 1,
           "autoGrow": true
         },
         {
           "id": "@ql.client_id",
           "name": "青龙面板 Client ID",
+          "val": "",
           "type": "textarea",
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
           "placeholder": "通用则填一个: a1b2c3d4多个用@连接: a1b2c3d4@e5f6g7h8",
@@ -306,6 +322,7 @@
         {
           "id": "@ql.client_secret",
           "name": "青龙面板 Client Secret",
+          "val": "",
           "type": "textarea",
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
           "placeholder": "通用则填一个: x1y2z3多个用@连接: x1y2z3@w4v5u6",
