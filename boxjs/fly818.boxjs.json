@@ -6,7 +6,7 @@
   "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
   "apps": [
     {
-      "id": "CSAIR",
+      "id": "CSAIR.token",
       "name": "南方航空",
       "keys": [
         "nfhk_debug",
@@ -123,7 +123,7 @@
       "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
     },
     {
-      "id": "HR",
+      "id": "HR.token",
       "name": "华润系列",
       "keys": [
         "Ydwx",
@@ -194,7 +194,7 @@
       "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
     },
     {
-      "id": "qc",
+      "id": "qc.token",
       "name": "雀巢",
       "keys": [
         "NESTLE_TOKEN"
@@ -217,7 +217,7 @@
       "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
     },
     {
-      "id": "shymt",
+      "id": "shymt.token",
       "name": "上海云媒体",
       "keys": [
         "shyp",
@@ -469,7 +469,8 @@
       "id": "qx.node",
       "name": "依赖管理",
       "keys": [
-        "CryptoJS_code"
+        "CryptoJS_code",
+        "Cheerio_code"
       ],
       "settings": [
         {
