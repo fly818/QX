@@ -119,8 +119,7 @@
       ],
       "descs_html": [
         "<b>建议使用验证码模式登陆</b>"
-      ],
-      "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
+      ]
     },
     {
       "id": "HR.token",
@@ -190,8 +189,7 @@
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
-      ],
-      "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
+      ]
     },
     {
       "id": "qc.token",
@@ -213,8 +211,7 @@
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
-      ],
-      "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
+      ]
     },
     {
       "id": "shymt.token",
@@ -255,8 +252,7 @@
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
-      ],
-      "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
+      ]
     },
     {
       "id": "boxjs_to_ql",
@@ -346,8 +342,7 @@
         "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
         "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
         "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
-      ],
-      "icon": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png"
+      ]
     },
     {
       "id": "ftej.token",
@@ -462,8 +457,7 @@
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png"
-      ],
-      "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png"
+      ]
     },
     {
       "id": "qx.node",
@@ -498,8 +492,7 @@
       "icons": [
         "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png",
         "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
-      ],
-      "icon": "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
+      ]
     }
   ]
 }
