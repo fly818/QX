@@ -354,6 +354,16 @@
       "name": "福田",
       "keys": [
         "FTEJ",
+        "ftej_enable",
+        "ftej_debug",
+        "ftej_operate_pika",
+        "ftej_timeout",
+        "ftej_account_delay_min",
+        "ftej_account_delay_max",
+        "ftej_task_delay_enable",
+        "ftej_task_delay_min",
+        "ftej_task_delay_max",
+        "ftej_task_blacklist",
         "CryptoJS"
       ],
       "settings": [
@@ -367,12 +377,94 @@
           "autoGrow": true
         },
         {
-          "id": "CryptoJS",
+          "id": "ftej_enable",
+          "name": "脚本运行总开关",
+          "val": "true",
+          "type": "boolean"
+        },
+        {
+          "id": "ftej_debug",
+          "name": "debug",
+          "val": "false",
+          "type": "boolean",
+          "desc": "调试模式开关"
+        },
+        {
+          "id": "ftej_operate_pika",
+          "name": "皮卡生活任务",
+          "val": "true",
+          "type": "boolean",
+          "desc": "执行任务会发送提示短信"
+        },
+        {
+          "id": "ftej_timeout",
+          "name": "请求超时时间",
+          "val": "30",
+          "type": "number",
+          "desc": "网络请求超时时间（单位：秒），可根据网络情况适当调整",
+          "persistentHint": true
+        },
+        {
+          "id": "ftej_account_delay_min",
+          "name": "账号间最小随机延时时间",
+          "val": "30",
+          "type": "slider",
+          "min": 30,
+          "max": 60,
+          "step": 1
+        },
+        {
+          "id": "ftej_account_delay_max",
+          "name": "账号间最大随机延时时间",
+          "val": "90",
+          "type": "slider",
+          "min": 90,
+          "max": 120,
+          "step": 1
+        },
+        {
+          "id": "ftej_task_delay_enable",
+          "name": "开启子任务间延时",
+          "val": "true",
+          "type": "boolean"
+        },
+        {
+          "id": "ftej_task_delay_min",
+          "name": "最小随机延时时间",
+          "val": "10",
+          "type": "slider",
+          "min": 10,
+          "max": 30,
+          "step": 1
+        },
+        {
+          "id": "ftej_task_delay_max",
+          "name": "最大随机延时时间",
+          "val": "30",
+          "type": "slider",
+          "min": 30,
+          "max": 60,
+          "step": 1
+        },
+        {
+          "id": "ftej_task_blacklist",
+          "name": "任务黑名单",
+          "val": "",
+          "type": "textarea",
+          "desc": "多个任务用逗号或换行分隔",
+          "rows": 2,
+          "autoGrow": true,
+          "persistentHint": true
+        },
+        {
+          "id": "CryptoJS_code",
           "name": "CryptoJS 库",
           "val": "",
           "type": "textarea",
+          "desc": "CryptoJS 库，请勿清除",
           "rows": 3,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": true
         }
       ],
       "icons": [
