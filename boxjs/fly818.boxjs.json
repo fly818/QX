@@ -480,6 +480,16 @@
           "rows": 5,
           "autoGrow": false,
           "persistentHint": true
+        },
+        {
+          "id": "Cheerio_code",
+          "name": "Cheerio",
+          "val": "",
+          "type": "textarea",
+          "desc": "阿里云脚本使用的依赖",
+          "rows": 5,
+          "autoGrow": false,
+          "persistentHint": true
         }
       ],
       "author": "mumu",
