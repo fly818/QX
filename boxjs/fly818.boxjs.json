@@ -21,9 +21,6 @@
         "nfhk_expired_keywords",
         "nfhk_expired_codes"
       ],
-      "descs_html": [
-        "<b>建议使用验证码模式登陆</b>"
-      ],
       "settings": [
         {
           "id": "nfhk_debug",
@@ -115,11 +112,14 @@
           "autoGrow": true
         }
       ],
+      "author": "@mumu",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
       ],
-      "author": "@mumu",
+      "descs_html": [
+        "<b>建议使用验证码模式登陆</b>"
+      ],
       "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
     },
     {
@@ -186,11 +186,11 @@
           "autoGrow": true
         }
       ],
+      "author": "@mumu",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
       ],
-      "author": "@mumu",
       "icon": "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
     },
     {
@@ -209,11 +209,11 @@
           "autoGrow": true
         }
       ],
+      "author": "@mumu",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
       ],
-      "author": "@mumu",
       "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
     },
     {
@@ -251,19 +251,16 @@
           "autoGrow": true
         }
       ],
+      "author": "@mumu",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
       ],
-      "author": "@mumu",
       "icon": "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
     },
     {
       "id": "boxjs_to_ql",
       "name": "boxjs同步ql",
-      "author": "Gemini",
-      "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
-      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
       "keys": [
         "@ql.mute",
         "@ql.sync_env__key",
@@ -271,17 +268,6 @@
         "@ql.port",
         "@ql.client_id",
         "@ql.client_secret"
-      ],
-      "descs_html": [
-        "<b>支持两种模式，请根据需求填写：</b>",
-        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
-        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
-        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
-        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
-        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
       ],
       "settings": [
         {
@@ -347,7 +333,52 @@
           "persistentHint": true
         }
       ],
+      "author": "Gemini",
+      "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
+      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
+      "icons": [
+        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
+        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
+      ],
+      "descs_html": [
+        "<b>支持两种模式，请根据需求填写：</b>",
+        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
+        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
+        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
+        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
+      ],
       "icon": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png"
+    },
+    {
+      "id": "ftej.token",
+      "name": "福田",
+      "keys": [
+        "FTEJ",
+        "CryptoJS"
+      ],
+      "settings": [
+        {
+          "id": "FTEJ",
+          "name": "账号密码",
+          "val": "",
+          "type": "textarea",
+          "desc": "手机号1&密码1\\n手机号2&密码2",
+          "rows": 3,
+          "autoGrow": true
+        },
+        {
+          "id": "CryptoJS",
+          "name": "CryptoJS 库",
+          "val": "",
+          "type": "textarea",
+          "rows": 3,
+          "autoGrow": false
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
+      ],
+      "icon": "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
     }
   ]
 }
