@@ -255,96 +255,6 @@
       ]
     },
     {
-      "id": "boxjs_to_ql",
-      "name": "boxjs同步ql",
-      "keys": [
-        "@ql.mute",
-        "@ql.sync_env__key",
-        "@ql.ip",
-        "@ql.port",
-        "@ql.client_id",
-        "@ql.client_secret"
-      ],
-      "settings": [
-        {
-          "id": "@ql.mute",
-          "name": "静音通知",
-          "val": "false",
-          "type": "boolean",
-          "desc": "同步完成后，是否关闭系统通知。"
-        },
-        {
-          "id": "@ql.sync_env__key",
-          "name": "同步环境变量规则",
-          "val": "",
-          "type": "textarea",
-          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。",
-          "placeholder": "boxjs变量名#ql变量名#ql备注-boxjs变量名#ql变量名#ql备注 (禁用)",
-          "rows": 5,
-          "autoGrow": true,
-          "persistentHint": true
-        },
-        {
-          "id": "@ql.ip",
-          "name": "青龙面板 IP 地址",
-          "val": "",
-          "type": "textarea",
-          "desc": "支持多个IP，用'@'分隔。",
-          "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
-          "rows": 2,
-          "autoGrow": true,
-          "persistentHint": true
-        },
-        {
-          "id": "@ql.port",
-          "name": "青龙面板端口",
-          "val": "",
-          "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
-          "placeholder": "通用则填一个: 5700独立则填多个: 5700@5701",
-          "rows": 2,
-          "autoGrow": true,
-          "persistentHint": true
-        },
-        {
-          "id": "@ql.client_id",
-          "name": "青龙面板 Client ID",
-          "val": "",
-          "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
-          "placeholder": "通用则填一个: a1b2c3d4独立则填多个: a1b2c3d4@e5f6g7h8",
-          "rows": 2,
-          "autoGrow": true,
-          "persistentHint": true
-        },
-        {
-          "id": "@ql.client_secret",
-          "name": "青龙面板 Client Secret",
-          "val": "",
-          "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
-          "placeholder": "通用则填一个: x1y2z3独立则填多个: x1y2z3@w4v5u6",
-          "rows": 2,
-          "autoGrow": true,
-          "persistentHint": true
-        }
-      ],
-      "author": "mumu",
-      "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
-      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
-      "icons": [
-        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
-        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
-      ],
-      "descs_html": [
-        "<b>支持两种模式，请根据需求填写：</b>",
-        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
-        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
-        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
-        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
-      ]
-    },
-    {
       "id": "ftej.token",
       "name": "福田e家",
       "keys": [
@@ -406,17 +316,17 @@
           "val": "30",
           "type": "slider",
           "min": 30,
-          "max": 60,
-          "step": 1
+          "max": 100,
+          "step": 5
         },
         {
           "id": "ftej_account_delay_max",
           "name": "账号间最大随机延时时间",
           "val": "90",
           "type": "slider",
-          "min": 90,
-          "max": 120,
-          "step": 1
+          "min": 101,
+          "max": 240,
+          "step": 5
         },
         {
           "id": "ftej_task_delay_enable",
@@ -426,16 +336,16 @@
         },
         {
           "id": "ftej_task_delay_min",
-          "name": "最小随机延时时间",
+          "name": "任务间最小随机延时时间",
           "val": "10",
           "type": "slider",
-          "min": 10,
+          "min": 5,
           "max": 30,
           "step": 1
         },
         {
           "id": "ftej_task_delay_max",
-          "name": "最大随机延时时间",
+          "name": "任务间最大随机延时时间",
           "val": "30",
           "type": "slider",
           "min": 30,
@@ -457,6 +367,96 @@
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png"
+      ]
+    },
+    {
+      "id": "boxjs_to_ql",
+      "name": "boxjs同步ql",
+      "keys": [
+        "@ql.mute",
+        "@ql.sync_env__key",
+        "@ql.ip",
+        "@ql.port",
+        "@ql.client_id",
+        "@ql.client_secret"
+      ],
+      "settings": [
+        {
+          "id": "@ql.mute",
+          "name": "静音通知",
+          "val": "false",
+          "type": "boolean",
+          "desc": "同步完成后，是否关闭系统通知。"
+        },
+        {
+          "id": "@ql.sync_env__key",
+          "name": "同步环境变量规则",
+          "val": "",
+          "type": "textarea",
+          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。",
+          "placeholder": "boxjs变量名#ql变量名#ql备注-boxjs变量名#ql变量名#ql备注 (禁用)",
+          "rows": 5,
+          "autoGrow": true,
+          "persistentHint": true
+        },
+        {
+          "id": "@ql.ip",
+          "name": "青龙面板 IP 地址",
+          "val": "",
+          "type": "textarea",
+          "desc": "支持多个IP，用'@'分隔。",
+          "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
+          "rows": 2,
+          "autoGrow": true,
+          "persistentHint": true
+        },
+        {
+          "id": "@ql.port",
+          "name": "青龙面板端口",
+          "val": "",
+          "type": "textarea",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
+          "placeholder": "通用则填一个: 5700独立则填多个: 5700@5701",
+          "rows": 1,
+          "autoGrow": true,
+          "persistentHint": true
+        },
+        {
+          "id": "@ql.client_id",
+          "name": "青龙面板 Client ID",
+          "val": "",
+          "type": "textarea",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
+          "placeholder": "通用则填一个: a1b2c3d4独立则填多个: a1b2c3d4@e5f6g7h8",
+          "rows": 1,
+          "autoGrow": true,
+          "persistentHint": true
+        },
+        {
+          "id": "@ql.client_secret",
+          "name": "青龙面板 Client Secret",
+          "val": "",
+          "type": "textarea",
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
+          "placeholder": "通用则填一个: x1y2z3独立则填多个: x1y2z3@w4v5u6",
+          "rows": 1,
+          "autoGrow": true,
+          "persistentHint": true
+        }
+      ],
+      "author": "mumu",
+      "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
+      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
+      "icons": [
+        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
+        "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
+      ],
+      "descs_html": [
+        "<b>支持两种模式，请根据需求填写：</b>",
+        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
+        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
+        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
+        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
       ]
     },
     {
