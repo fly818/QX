@@ -140,7 +140,7 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         },
         {
           "id": "cjwlhck",
@@ -149,7 +149,7 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         },
         {
           "id": "jjjck",
@@ -158,7 +158,7 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         },
         {
           "id": "wtwlh",
@@ -166,7 +166,7 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         },
         {
           "id": "oleck",
@@ -174,7 +174,7 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         },
         {
           "id": "hrtwx",
@@ -182,7 +182,7 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         }
       ],
       "author": "@mumu",
@@ -204,7 +204,7 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": false
         }
       ],
       "author": "@mumu",
@@ -227,23 +227,6 @@
           "name": "上海杨浦",
           "val": "",
           "type": "textarea",
-          "rows": 5,
-          "autoGrow": true
-        },
-        {
-          "id": "shyp_sku",
-          "name": "商城兑换商品",
-          "val": "",
-          "type": "textarea",
-          "rows": 5,
-          "autoGrow": true
-        },
-        {
-          "id": "shyp_accounts",
-          "name": "杨浦积分商城",
-          "val": "",
-          "type": "textarea",
-          "desc": "有效期一个月",
           "rows": 5,
           "autoGrow": true
         }
@@ -337,7 +320,7 @@
         {
           "id": "ftej_task_delay_min",
           "name": "任务间最小随机延时时间",
-          "val": "10",
+          "val": "5",
           "type": "slider",
           "min": 5,
           "max": 30,
@@ -406,7 +389,7 @@
           "type": "textarea",
           "desc": "支持多个IP，用'@'分隔。",
           "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
-          "rows": 2,
+          "rows": 1,
           "autoGrow": true,
           "persistentHint": true
         },
@@ -482,7 +465,7 @@
           "name": "Cheerio",
           "val": "",
           "type": "textarea",
-          "desc": "阿里云脚本使用的依赖",
+          "desc": "Cheerio依赖",
           "rows": 5,
           "autoGrow": false,
           "persistentHint": true
@@ -490,7 +473,7 @@
       ],
       "author": "mumu",
       "icons": [
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png",
+        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
         "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
       ]
     }
