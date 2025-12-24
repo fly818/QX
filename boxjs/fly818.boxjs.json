@@ -338,7 +338,7 @@
         {
           "id": "ftej_task_blacklist",
           "name": "任务黑名单",
-          "val": "",
+          "val": "注册,发帖,完善信息,预约维保或紧急救援,服务评价,推荐购车",
           "type": "textarea",
           "desc": "多个任务用逗号或换行分隔",
           "rows": 2,
