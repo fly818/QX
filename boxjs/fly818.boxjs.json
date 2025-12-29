@@ -203,8 +203,10 @@
           "name": "雀巢会员",
           "val": "",
           "type": "textarea",
-          "rows": 5,
-          "autoGrow": false
+          "desc": "有效期30天，过期后清除重新获取。",
+          "rows": 6,
+          "autoGrow": false,
+          "persistentHint": true
         }
       ],
       "author": "@mumu",
@@ -217,9 +219,7 @@
       "id": "shymt.token",
       "name": "上海云媒体",
       "keys": [
-        "shyp",
-        "shyp_sku",
-        "shyp_accounts"
+        "shyp"
       ],
       "settings": [
         {
@@ -251,8 +251,7 @@
         "ftej_task_delay_enable",
         "ftej_task_delay_min",
         "ftej_task_delay_max",
-        "ftej_task_blacklist",
-        "CryptoJS"
+        "ftej_task_blacklist"
       ],
       "settings": [
         {
