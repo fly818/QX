@@ -9,19 +9,36 @@
       "id": "CSAIR.token",
       "name": "南方航空",
       "keys": [
+        "NFHK_ACCOUNTS",
+        "nfhk_get_token",
         "nfhk_debug",
         "nfhk_sign_in",
         "nfhk_concurrent",
         "nfhk_shuffle",
         "nfhk_log_prize",
         "nfhk_auto_clean",
-        "NFHK_ACCOUNTS",
         "NFHK_DEFAULT_RAFFLEID",
         "NFHK_RAFFLEID",
         "nfhk_expired_keywords",
         "nfhk_expired_codes"
       ],
       "settings": [
+        {
+          "id": "NFHK_ACCOUNTS",
+          "name": "南方航空账号列表",
+          "val": "",
+          "type": "textarea",
+          "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]",
+          "rows": 5,
+          "autoGrow": true
+        },
+        {
+          "id": "nfhk_get_token",
+          "name": "获取TOKEN",
+          "val": "false",
+          "type": "boolean",
+          "desc": "获取token时打开"
+        },
         {
           "id": "nfhk_debug",
           "name": "开启Debug日志",
@@ -63,15 +80,6 @@
           "val": "true",
           "type": "boolean",
           "desc": "自动移除已结束、奖品抽完的活动ID"
-        },
-        {
-          "id": "NFHK_ACCOUNTS",
-          "name": "南方航空账号列表",
-          "val": "",
-          "type": "textarea",
-          "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]",
-          "rows": 5,
-          "autoGrow": true
         },
         {
           "id": "NFHK_DEFAULT_RAFFLEID",
