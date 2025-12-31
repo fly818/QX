@@ -419,10 +419,7 @@
         "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/aliyun_web.png"
       ],
       "descs_html": [
-        "<a href=\"aliyun://forward/sign?target_=/h5&url_=https%3A%2F%2Fdeveloper.aliyun.com%2Fapp-mobile%2Fscore%3FnavigationBar%3Dfalse%26yunappuuid%3D16927757347529uytoyzurjp\" ",
-        "   style=\"padding: 10px 20px; background-color: #ff6a00; color: white; text-decoration: none; border-radius: 5px;\">",
-        "    打开阿里云并领取积分",
-        "</a>"
+        "🚀 <a target=\"_blank\" href=\"aliyun://forward/sign?target_=/h5&url_=https%3A%2F%2Fdeveloper.aliyun.com%2Fapp-mobile%2Fscore%3FnavigationBar%3Dfalse%26yunappuuid%3D16927757347529uytoyzurjp\">前往阿里云签到</a>"
       ]
     },
     {
