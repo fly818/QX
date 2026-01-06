@@ -513,6 +513,55 @@
       ]
     },
     {
+      "id": "bot_notify_module",
+      "name": "Bot通知",
+      "keys": [
+        "bot_notify_mode",
+        "bot_notify_url",
+        "bot_secret"
+      ],
+      "settings": [
+        {
+          "id": "bot_notify_mode",
+          "name": "模式",
+          "val": "channel",
+          "type": "radios",
+          "desc": "选择通知模式",
+          "items": [
+            {
+              "key": "broadcast",
+              "label": "bot"
+            },
+            {
+              "key": "channel",
+              "label": "channel"
+            }
+          ]
+        },
+        {
+          "id": "bot_notify_url",
+          "name": "Bot域名",
+          "val": "",
+          "type": "textarea",
+          "rows": 3,
+          "autoGrow": false
+        },
+        {
+          "id": "bot_secret",
+          "name": "Bot令牌",
+          "val": "",
+          "type": "textarea",
+          "rows": 3,
+          "autoGrow": false
+        }
+      ],
+      "author": "mumu",
+      "icons": [
+        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
+        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.light.png"
+      ]
+    },
+    {
       "id": "qx.node",
       "name": "依赖管理",
       "keys": [
@@ -545,55 +594,6 @@
       "icons": [
         "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
         "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
-      ]
-    },
-    {
-      "id": "bot_notify_module",
-      "name": "Bot通知",
-      "keys": [
-        "bot_notify_mode",
-        "bot_notify_url",
-        "bot_secret"
-      ],
-      "settings": [
-        {
-          "id": "bot_notify_mode",
-          "name": "模式",
-          "val": "channel",
-          "type": "radios",
-          "desc": "选择通知模式",
-          "items": [
-            {
-              "key": "bot",
-              "label": "broadcast"
-            },
-            {
-              "key": "channel",
-              "label": "channel"
-            }
-          ]
-        },
-        {
-          "id": "bot_notify_url",
-          "name": "Bot域名",
-          "val": "",
-          "type": "textarea",
-          "rows": 3,
-          "autoGrow": false
-        },
-        {
-          "id": "bot_secret",
-          "name": "Bot令牌",
-          "val": "",
-          "type": "textarea",
-          "rows": 3,
-          "autoGrow": false
-        }
-      ],
-      "author": "mumu",
-      "icons": [
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.light.png"
       ]
     }
   ]
