@@ -557,6 +557,14 @@
           "type": "textarea",
           "rows": 3,
           "autoGrow": true
+        },
+        {
+          "id": "bot_notify_module_url",
+          "name": "通知模块",
+          "val": "",
+          "type": "textarea",
+          "rows": 3,
+          "autoGrow": false
         }
       ],
       "author": "mumu",
@@ -594,8 +602,8 @@
           "persistentHint": true
         },
         {
-          "id": "NOTIFY_CACHE_KEY",
-          "name": "NOTIFY_CACHE",
+          "id": "bot_notify_module_code",
+          "name": "通知模块",
           "val": "",
           "type": "textarea",
           "rows": 3,
