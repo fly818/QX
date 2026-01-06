@@ -578,7 +578,8 @@
       "name": "依赖管理",
       "keys": [
         "CryptoJS_code",
-        "Cheerio_code"
+        "Cheerio_code",
+        "bot_notify_module_code"
       ],
       "settings": [
         {
