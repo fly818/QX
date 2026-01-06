@@ -534,7 +534,7 @@
             },
             {
               "key": "broadcast",
-              "label": "Bot广播"
+              "label": "广播"
             },
             {
               "key": "both",
@@ -592,6 +592,14 @@
           "rows": 5,
           "autoGrow": false,
           "persistentHint": true
+        },
+        {
+          "id": "NOTIFY_CACHE_KEY",
+          "name": "NOTIFY_CACHE",
+          "val": "",
+          "type": "textarea",
+          "rows": 3,
+          "autoGrow": false
         }
       ],
       "author": "mumu",
