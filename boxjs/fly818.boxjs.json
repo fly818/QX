@@ -513,7 +513,7 @@
       ]
     },
     {
-      "id": "bot_notify_module",
+      "id": "bot_notify",
       "name": "Bot通知",
       "keys": [
         "bot_notify_mode",
@@ -526,15 +526,19 @@
           "name": "模式",
           "val": "channel",
           "type": "radios",
-          "desc": "选择通知模式",
+          "desc": "选择通知模式，默认频道模式",
           "items": [
             {
-              "key": "broadcast",
-              "label": "bot"
+              "key": "channel",
+              "label": "频道"
             },
             {
-              "key": "channel",
-              "label": "channel"
+              "key": "broadcast",
+              "label": "Bot广播"
+            },
+            {
+              "key": "both",
+              "label": "广播+频道"
             }
           ]
         },
@@ -544,7 +548,7 @@
           "val": "",
           "type": "textarea",
           "rows": 3,
-          "autoGrow": false
+          "autoGrow": true
         },
         {
           "id": "bot_secret",
@@ -552,7 +556,7 @@
           "val": "",
           "type": "textarea",
           "rows": 3,
-          "autoGrow": false
+          "autoGrow": true
         }
       ],
       "author": "mumu",
