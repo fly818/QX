@@ -584,6 +584,82 @@
       ]
     },
     {
+      "id": "exijiu",
+      "name": "习酒",
+      "keys": [
+        "XIJIU_ACCOUNTS",
+        "OCR_SERVER",
+        "XIJIU_LOG_LEVEL",
+        "XIJIU_ACCOUNT_DELAY_MAX",
+        "XIJIU_ACCOUNT_DELAY_MIN"
+      ],
+      "settings": [
+        {
+          "id": "XIJIU_ACCOUNTS",
+          "name": "CK",
+          "val": "",
+          "type": "textarea",
+          "rows": 5,
+          "autoGrow": false,
+          "persistentHint": true
+        },
+        {
+          "id": "OCR_SERVER",
+          "name": "OCR服务器",
+          "val": "",
+          "type": "textarea",
+          "rows": 1,
+          "autoGrow": true
+        },
+        {
+          "id": "XIJIU_LOG_LEVEL",
+          "name": "日志等级",
+          "val": "info",
+          "type": "radios",
+          "items": [
+            {
+              "key": "info",
+              "label": "info"
+            },
+            {
+              "key": "debug",
+              "label": "debug"
+            },
+            {
+              "key": "warn",
+              "label": "warn"
+            },
+            {
+              "key": "error",
+              "label": "error"
+            }
+          ]
+        },
+        {
+          "id": "XIJIU_ACCOUNT_DELAY_MAX",
+          "name": "账号间延迟最大时间ms",
+          "val": "60000",
+          "type": "slider",
+          "min": 60000,
+          "max": 100000,
+          "step": 100
+        },
+        {
+          "id": "XIJIU_ACCOUNT_DELAY_MIN",
+          "name": "账号间延迟最小时间ms",
+          "val": "30000",
+          "type": "slider",
+          "min": 30000,
+          "max": 60000,
+          "step": 100
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
+        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.light.png"
+      ]
+    },
+    {
       "id": "qx.node",
       "name": "依赖管理",
       "keys": [
