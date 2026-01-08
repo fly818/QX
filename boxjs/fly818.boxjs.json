@@ -30,56 +30,64 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         },
         {
           "id": "nfhk_get_token",
           "name": "获取TOKEN",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "获取token时打开"
+          "desc": "获取token时打开",
+          "persistentHint": false
         },
         {
           "id": "nfhk_debug",
           "name": "开启Debug日志",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "在日志中打印详细的请求和响应信息，调试用"
+          "desc": "在日志中打印详细的请求和响应信息，调试用",
+          "persistentHint": false
         },
         {
           "id": "nfhk_sign_in",
           "name": "开启每日签到",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "默认关闭以降低风控，需要请开启"
+          "desc": "默认关闭以降低风控，需要请开启",
+          "persistentHint": false
         },
         {
           "id": "nfhk_concurrent",
           "name": "开启并发执行",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "多账号同时运行，速度快但风险高，建议保持关闭（顺序执行）"
+          "desc": "多账号同时运行，速度快但风险高，建议保持关闭（顺序执行）",
+          "persistentHint": false
         },
         {
           "id": "nfhk_shuffle",
           "name": "开启乱序执行",
-          "val": "true",
+          "val": true,
           "type": "boolean",
-          "desc": "每次运行打乱账号顺序，模拟真实行为，防止风控检测固定模式"
+          "desc": "每次运行打乱账号顺序，模拟真实行为，防止风控检测固定模式",
+          "persistentHint": false
         },
         {
           "id": "nfhk_log_prize",
           "name": "打印奖品列表",
-          "val": "true",
+          "val": true,
           "type": "boolean",
-          "desc": "在日志中显示获取到的奖品详情"
+          "desc": "在日志中显示获取到的奖品详情",
+          "persistentHint": false
         },
         {
           "id": "nfhk_auto_clean",
           "name": "自动清理过期活动",
-          "val": "true",
+          "val": true,
           "type": "boolean",
-          "desc": "自动移除已结束、奖品抽完的活动ID"
+          "desc": "自动移除已结束、奖品抽完的活动ID",
+          "persistentHint": false
         },
         {
           "id": "NFHK_DEFAULT_RAFFLEID",
@@ -108,7 +116,8 @@
           "type": "textarea",
           "desc": "自定义识别过期的关键词，支持JSON数组或逗号分隔字符串",
           "rows": 3,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         },
         {
           "id": "nfhk_expired_codes",
@@ -117,7 +126,8 @@
           "type": "textarea",
           "desc": "自定义识别过期的错误码，支持JSON数组或逗号分隔字符串",
           "rows": 2,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         }
       ],
       "author": "@mumu",
@@ -148,7 +158,8 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]",
           "rows": 5,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         },
         {
           "id": "cjwlhck",
@@ -157,7 +168,8 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接",
           "rows": 5,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         },
         {
           "id": "jjjck",
@@ -166,7 +178,8 @@
           "type": "textarea",
           "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）",
           "rows": 5,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         },
         {
           "id": "wtwlh",
@@ -174,7 +187,8 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         },
         {
           "id": "oleck",
@@ -182,7 +196,8 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         },
         {
           "id": "hrtwx",
@@ -190,7 +205,8 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         }
       ],
       "author": "@mumu",
@@ -236,7 +252,8 @@
           "val": "",
           "type": "textarea",
           "rows": 5,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         }
       ],
       "author": "@mumu",
@@ -275,27 +292,30 @@
         {
           "id": "ftej_enable",
           "name": "脚本运行总开关",
-          "val": "true",
-          "type": "boolean"
+          "val": true,
+          "type": "boolean",
+          "persistentHint": false
         },
         {
           "id": "ftej_debug",
           "name": "debug",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "调试模式开关"
+          "desc": "调试模式开关",
+          "persistentHint": false
         },
         {
           "id": "ftej_operate_pika",
           "name": "皮卡生活任务",
-          "val": "true",
+          "val": true,
           "type": "boolean",
-          "desc": "执行任务会发送提示短信"
+          "desc": "执行任务会发送提示短信",
+          "persistentHint": false
         },
         {
           "id": "ftej_timeout",
           "name": "请求超时时间",
-          "val": "30",
+          "val": 30,
           "type": "number",
           "desc": "网络请求超时时间（单位：秒），可根据网络情况适当调整",
           "persistentHint": true
@@ -303,44 +323,49 @@
         {
           "id": "ftej_account_delay_min",
           "name": "账号间最小随机延时时间",
-          "val": "30",
+          "val": 30,
           "type": "slider",
           "min": 30,
           "max": 100,
-          "step": 5
+          "step": 5,
+          "persistentHint": false
         },
         {
           "id": "ftej_account_delay_max",
           "name": "账号间最大随机延时时间",
-          "val": "90",
+          "val": 90,
           "type": "slider",
           "min": 101,
           "max": 240,
-          "step": 5
+          "step": 5,
+          "persistentHint": false
         },
         {
           "id": "ftej_task_delay_enable",
           "name": "开启子任务间延时",
-          "val": "true",
-          "type": "boolean"
+          "val": true,
+          "type": "boolean",
+          "persistentHint": false
         },
         {
           "id": "ftej_task_delay_min",
           "name": "任务间最小随机延时时间",
-          "val": "5",
+          "val": 5,
           "type": "slider",
           "min": 5,
           "max": 30,
-          "step": 1
+          "step": 1,
+          "persistentHint": false
         },
         {
           "id": "ftej_task_delay_max",
           "name": "任务间最大随机延时时间",
-          "val": "30",
+          "val": 30,
           "type": "slider",
           "min": 30,
           "max": 60,
-          "step": 1
+          "step": 1,
+          "persistentHint": false
         },
         {
           "id": "ftej_task_blacklist",
@@ -371,9 +396,10 @@
         {
           "id": "is_debug",
           "name": "开启调试模式",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "默认关闭"
+          "desc": "默认关闭",
+          "persistentHint": false
         },
         {
           "id": "aliyunWeb_data",
@@ -382,35 +408,40 @@
           "type": "textarea",
           "desc": "阿里云社区Cookie数据",
           "rows": 3,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         },
         {
           "id": "aliyunWeb_time",
           "name": "阿里云社区控制时间",
           "val": "12",
-          "type": "input",
-          "desc": "早于该时间则执行任务，晚于该时间则领取积分，默认: 12(即中午12点，为避免出现乱七八糟的问题，请设置: 1-23的整数)"
+          "type": "text",
+          "desc": "早于该时间则执行任务，晚于该时间则领取积分，默认: 12(即中午12点，为避免出现乱七八糟的问题，请设置: 1-23的整数)",
+          "persistentHint": false
         },
         {
           "id": "aliyunWeb_scene",
           "name": "开启场景任务",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "控制是否开启场景任务，默认：关闭(false)"
+          "desc": "控制是否开启场景任务，默认：关闭(false)",
+          "persistentHint": false
         },
         {
           "id": "aliyunWeb_stock",
           "name": "开启库存查询",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "控制是否开启库存查询，默认：关闭(false)"
+          "desc": "控制是否开启库存查询，默认：关闭(false)",
+          "persistentHint": false
         },
         {
           "id": "aliyunWeb_video",
           "name": "开启视频任务",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "控制是否开启视频任务，默认：关闭(false)"
+          "desc": "控制是否开启视频任务，默认：关闭(false)",
+          "persistentHint": false
         }
       ],
       "author": "@leiyiyan",
@@ -437,9 +468,10 @@
         {
           "id": "@ql.mute",
           "name": "静音通知",
-          "val": "false",
+          "val": false,
           "type": "boolean",
-          "desc": "同步完成后，是否关闭系统通知。"
+          "desc": "同步完成后，是否关闭系统通知。",
+          "persistentHint": false
         },
         {
           "id": "@ql.sync_env__key",
@@ -527,8 +559,9 @@
           "id": "bot_notify_mode",
           "name": "模式",
           "val": "channel",
-          "type": "radios",
+          "type": "selects",
           "desc": "选择通知模式，默认频道模式",
+          "persistentHint": false,
           "items": [
             {
               "key": "channel",
@@ -550,7 +583,8 @@
           "val": "",
           "type": "textarea",
           "rows": 3,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         },
         {
           "id": "bot_secret",
@@ -558,7 +592,8 @@
           "val": "",
           "type": "textarea",
           "rows": 3,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         },
         {
           "id": "bot_notify_module_url",
@@ -566,7 +601,8 @@
           "val": "",
           "type": "textarea",
           "rows": 3,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         },
         {
           "id": "bot_notify_module_code",
@@ -574,7 +610,8 @@
           "val": "",
           "type": "textarea",
           "rows": 3,
-          "autoGrow": false
+          "autoGrow": false,
+          "persistentHint": false
         }
       ],
       "author": "mumu",
@@ -615,7 +652,8 @@
               "key": "error",
               "label": "error"
             }
-          ]
+          ],
+          "persistentHint": false
         },
         {
           "id": "OCR_SERVER",
@@ -623,12 +661,13 @@
           "val": "",
           "type": "textarea",
           "rows": 1,
-          "autoGrow": true
+          "autoGrow": true,
+          "persistentHint": false
         },
         {
           "id": "XiJiu_Exchange",
           "name": "酒换积分",
-          "val": "",
+          "val": "true",
           "type": "radios",
           "desc": "是否使用酒自动换取积分",
           "items": [
@@ -640,7 +679,8 @@
               "key": "false",
               "label": "否"
             }
-          ]
+          ],
+          "persistentHint": false
         },
         {
           "id": "XIJIU_ACCOUNTS",
