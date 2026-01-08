@@ -589,14 +589,15 @@
       "keys": [
         "XIJIU_LOG_LEVEL",
         "OCR_SERVER",
+        "XiJiu_Exchange",
         "XIJIU_ACCOUNTS"
       ],
       "settings": [
         {
           "id": "XIJIU_LOG_LEVEL",
           "name": "日志等级",
-          "val": "info",
-          "type": "radios",
+          "val": "",
+          "type": "select",
           "items": [
             {
               "key": "info",
@@ -623,6 +624,23 @@
           "type": "textarea",
           "rows": 1,
           "autoGrow": true
+        },
+        {
+          "id": "XiJiu_Exchange",
+          "name": "酒换积分",
+          "val": "",
+          "type": "radios",
+          "desc": "是否使用酒自动换取积分",
+          "items": [
+            {
+              "key": "true",
+              "label": "是"
+            },
+            {
+              "key": "false",
+              "label": "否"
+            }
+          ]
         },
         {
           "id": "XIJIU_ACCOUNTS",
