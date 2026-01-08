@@ -625,8 +625,9 @@
       "name": "习酒",
       "keys": [
         "XIJIU_LOG_LEVEL",
-        "OCR_SERVER",
         "XiJiu_Exchange",
+        "OCR_SERVER",
+        "XiJiu_Exchange1",
         "XIJIU_ACCOUNTS"
       ],
       "settings": [
@@ -656,30 +657,20 @@
           "persistentHint": false
         },
         {
+          "id": "XiJiu_Exchange",
+          "name": "酒换积分",
+          "val": true,
+          "type": "boolean",
+          "desc": "自动使用酒换积分，默认开启",
+          "persistentHint": false
+        },
+        {
           "id": "OCR_SERVER",
           "name": "OCR服务器",
           "val": "",
           "type": "textarea",
           "rows": 1,
           "autoGrow": true,
-          "persistentHint": false
-        },
-        {
-          "id": "XiJiu_Exchange",
-          "name": "酒换积分",
-          "val": "true",
-          "type": "radios",
-          "desc": "是否使用酒自动换取积分",
-          "items": [
-            {
-              "key": "true",
-              "label": "是"
-            },
-            {
-              "key": "false",
-              "label": "否"
-            }
-          ],
           "persistentHint": false
         },
         {
