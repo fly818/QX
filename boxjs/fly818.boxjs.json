@@ -596,8 +596,8 @@
         {
           "id": "XIJIU_LOG_LEVEL",
           "name": "日志等级",
-          "val": "",
-          "type": "select",
+          "val": "info",
+          "type": "selects",
           "items": [
             {
               "key": "info",
