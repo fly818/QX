@@ -1,9 +1,9 @@
 {
-  "id": "",
+  "id": "mumu.app.sub",
   "name": "mumu应用订阅",
   "author": "@mumu",
-  "repo": "https://github.com/fly818/QX",
   "icon": "https://avatars.githubusercontent.com/u/34331927?s=400&u=b48c29ecc2c9a54784278d4530a5940e147a13dd&v=4",
+  "repo": "https://github.com/fly818/QX",
   "apps": [
     {
       "id": "CSAIR.token",
@@ -28,106 +28,106 @@
           "name": "南方航空账号列表",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：\n[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},\n{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]",
           "rows": 5,
-          "autoGrow": true,
-          "persistentHint": false
+          "autoGrow": false,
+          "persistentHint": false,
+          "desc": "请在此处粘贴您的南方航空账号JSON数组。每个账号应包含ID、token和timestamp。示例：[{\"ID\":\"123456789\",\"token\":\"abcdef123456\",\"timestamp\":1717939200000},{\"ID\":\"987654321\",\"token\":\"fedcba654321\",\"timestamp\":1717852800000}]"
         },
         {
           "id": "nfhk_get_token",
           "name": "获取TOKEN",
           "val": false,
           "type": "boolean",
-          "desc": "获取token时打开",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "获取token时打开"
         },
         {
           "id": "nfhk_debug",
           "name": "开启Debug日志",
           "val": false,
           "type": "boolean",
-          "desc": "在日志中打印详细的请求和响应信息，调试用",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "在日志中打印详细的请求和响应信息，调试用"
         },
         {
           "id": "nfhk_sign_in",
           "name": "开启每日签到",
           "val": false,
           "type": "boolean",
-          "desc": "默认关闭以降低风控，需要请开启",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "默认关闭以降低风控，需要请开启"
         },
         {
           "id": "nfhk_concurrent",
           "name": "开启并发执行",
           "val": false,
           "type": "boolean",
-          "desc": "多账号同时运行，速度快但风险高，建议保持关闭（顺序执行）",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "多账号同时运行，速度快但风险高，建议保持关闭（顺序执行）"
         },
         {
           "id": "nfhk_shuffle",
           "name": "开启乱序执行",
           "val": true,
           "type": "boolean",
-          "desc": "每次运行打乱账号顺序，模拟真实行为，防止风控检测固定模式",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "每次运行打乱账号顺序，模拟真实行为，防止风控检测固定模式"
         },
         {
           "id": "nfhk_log_prize",
           "name": "打印奖品列表",
           "val": true,
           "type": "boolean",
-          "desc": "在日志中显示获取到的奖品详情",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "在日志中显示获取到的奖品详情"
         },
         {
           "id": "nfhk_auto_clean",
           "name": "自动清理过期活动",
           "val": true,
           "type": "boolean",
-          "desc": "自动移除已结束、奖品抽完的活动ID",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "自动移除已结束、奖品抽完的活动ID"
         },
         {
           "id": "NFHK_DEFAULT_RAFFLEID",
           "name": "固定抽奖活动ID",
           "val": "",
           "type": "textarea",
-          "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里",
           "rows": 2,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "权益专区里的抽奖活动一般持续一个月，获取ID后保存在这里"
         },
         {
           "id": "NFHK_RAFFLEID",
           "name": "临时抽奖活动ID",
           "val": "",
           "type": "textarea",
-          "desc": "长期有效ID粘贴到固定抽奖活动区，一次性活动会自动清空",
           "rows": 5,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "长期有效ID粘贴到固定抽奖活动区，一次性活动会自动清空"
         },
         {
           "id": "nfhk_expired_keywords",
           "name": "过期活动关键词",
           "val": "[\"已结束\", \"奖品已抽完\", \"不在活动时间\", \"活动未开始\"]",
           "type": "textarea",
-          "desc": "自定义识别过期的关键词，支持JSON数组或逗号分隔字符串",
           "rows": 3,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "自定义识别过期的关键词，支持JSON数组或逗号分隔字符串"
         },
         {
           "id": "nfhk_expired_codes",
           "name": "过期活动错误码",
           "val": "[1105, \"0130\", \"1105\"]",
           "type": "textarea",
-          "desc": "自定义识别过期的错误码，支持JSON数组或逗号分隔字符串",
           "rows": 2,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "自定义识别过期的错误码，支持JSON数组或逗号分隔字符串"
         }
       ],
       "author": "@mumu",
@@ -156,30 +156,30 @@
           "name": "一点万象",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：\n[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "请在此处粘贴您的一点万象账号JSON数组。每个账号应包含token和deviceParams。示例：[{\"token\":\"abcdef123456\",\"deviceParams\":eyJK***}]"
         },
         {
           "id": "cjwlhck",
           "name": "春茧未来荟",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "请在此处粘贴您的春茧未来荟账号cookie多账号用“&”连接"
         },
         {
           "id": "jjjck",
           "name": "999会员中心",
           "val": "",
           "type": "textarea",
-          "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）"
         },
         {
           "id": "wtwlh",
@@ -227,10 +227,10 @@
           "name": "雀巢会员",
           "val": "",
           "type": "textarea",
-          "desc": "有效期30天，过期后清除重新获取。",
           "rows": 6,
           "autoGrow": false,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "有效期30天，过期后清除重新获取。"
         }
       ],
       "author": "@mumu",
@@ -470,63 +470,63 @@
           "name": "静音通知",
           "val": false,
           "type": "boolean",
-          "desc": "同步完成后，是否关闭系统通知。",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "同步完成后，是否关闭系统通知。"
         },
         {
           "id": "@ql.sync_env__key",
           "name": "同步环境变量规则",
           "val": "",
           "type": "textarea",
-          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。",
           "placeholder": "boxjs变量名#ql变量名#ql备注-boxjs变量名#ql变量名#ql备注 (禁用)",
           "rows": 5,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。"
         },
         {
           "id": "@ql.ip",
           "name": "青龙面板 IP 地址",
           "val": "",
           "type": "textarea",
-          "desc": "支持多个IP，用'@'分隔。",
           "placeholder": "例如: 192.168.1.10@192.168.1.11或者http://192.168.1.10@http://192.168.1.11",
           "rows": 1,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "支持多个IP，用'@'分隔。"
         },
         {
           "id": "@ql.port",
           "name": "青龙面板端口",
           "val": "",
           "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
           "placeholder": "通用则填一个: 5700独立则填多个: 5700@5701",
           "rows": 1,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
           "id": "@ql.client_id",
           "name": "青龙面板 Client ID",
           "val": "",
           "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
           "placeholder": "通用则填一个: a1b2c3d4独立则填多个: a1b2c3d4@e5f6g7h8",
           "rows": 1,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
           "id": "@ql.client_secret",
           "name": "青龙面板 Client Secret",
           "val": "",
           "type": "textarea",
-          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。",
           "placeholder": "通用则填一个: x1y2z3独立则填多个: x1y2z3@w4v5u6",
           "rows": 1,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
       ],
       "author": "mumu",
@@ -560,8 +560,7 @@
           "name": "模式",
           "val": "channel",
           "type": "selects",
-          "desc": "选择通知模式，默认频道模式",
-          "persistentHint": false,
+          "persistentHint": true,
           "items": [
             {
               "key": "channel",
@@ -575,7 +574,8 @@
               "key": "both",
               "label": "广播+频道"
             }
-          ]
+          ],
+          "desc": "选择通知模式，默认频道模式"
         },
         {
           "id": "bot_notify_url",
@@ -616,8 +616,8 @@
       ],
       "author": "mumu",
       "icons": [
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.light.png"
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
       ]
     },
     {
@@ -627,7 +627,6 @@
         "XIJIU_LOG_LEVEL",
         "XiJiu_Exchange",
         "OCR_SERVER",
-        "XiJiu_Exchange1",
         "XIJIU_ACCOUNTS"
       ],
       "settings": [
@@ -654,15 +653,15 @@
               "label": "error"
             }
           ],
-          "persistentHint": false
+          "persistentHint": true
         },
         {
           "id": "XiJiu_Exchange",
           "name": "酒换积分",
           "val": true,
           "type": "boolean",
-          "desc": "自动使用酒换积分，默认开启",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "自动使用酒换积分，默认开启."
         },
         {
           "id": "OCR_SERVER",
@@ -684,8 +683,8 @@
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.light.png"
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
       ]
     },
     {
@@ -701,26 +700,26 @@
           "name": "CryptoJS",
           "val": "",
           "type": "textarea",
-          "desc": "CryptoJS依赖",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "CryptoJS依赖"
         },
         {
           "id": "Cheerio_code",
           "name": "Cheerio",
           "val": "",
           "type": "textarea",
-          "desc": "Cheerio依赖",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "Cheerio依赖"
         }
       ],
       "author": "mumu",
       "icons": [
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.dark.png",
-        "https://raw.githubusercontent.com/chavyleung/scripts/refs/heads/master/box/icons/BoxJs.png"
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
       ]
     }
   ]
