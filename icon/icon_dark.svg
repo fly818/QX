@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1. Background: Purple #7251a8 -->
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="#7251a8" />
+
+  <!-- 2. Central Block: Dark Olive/Grey #3c3d2f -->
+  <rect x="115" y="115" width="282" height="282" rx="51" ry="51" fill="#292d3e" />
+
+  <!-- 3. Energy Jewel: Cyan Accent #77d6f1 -->
+  <g transform="translate(256, 256) rotate(45)">
+    <rect x="-70.5" y="-70.5" width="141" height="141" rx="4" fill="#77d6f1" />
+    
+    <!-- 4. Inner Core: Matches Background #7251a8 -->
+    <rect x="-40" y="-40" width="80" height="80" rx="2" fill="#7251a8" />
+  </g>
+  
+</svg>

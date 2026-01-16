@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1. Background: BoxJS Yellow #f5bb0f -->
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="#f5bb0f" />
+
+  <!-- 2. Central Block: Dark Grey #30383b -->
+  <rect x="115" y="115" width="282" height="282" rx="51" ry="51" fill="#30383b" />
+
+  <!-- 3. Energy Jewel: Red Accent #d75459 -->
+  <g transform="translate(256, 256) rotate(45)">
+    <rect x="-70.5" y="-70.5" width="141" height="141" rx="4" fill="#d75459" />
+    
+    <!-- 4. Inner Core: Matches Background #f5bb0f -->
+    <rect x="-40" y="-40" width="80" height="80" rx="2" fill="#f5bb0f" />
+  </g>
+  
+</svg>
