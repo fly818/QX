@@ -8,6 +8,9 @@
     {
       "id": "CSAIR.token",
       "name": "南方航空",
+      "descs_html": [
+        "<b>建议使用验证码模式登陆</b>"
+      ],
       "keys": [
         "NFHK_ACCOUNTS",
         "nfhk_get_token",
@@ -131,12 +134,10 @@
         }
       ],
       "author": "@mumu",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/nfhk.png"
-      ],
-      "descs_html": [
-        "<b>建议使用验证码模式登陆</b>"
       ]
     },
     {
@@ -387,6 +388,9 @@
     {
       "id": "Leiyiyan_Aliyun_Web",
       "name": "阿里云社区",
+      "descs_html": [
+        "🚀 <a target=\"_blank\" href=\"aliyun://forward/sign?target_=/h5&url_=https%3A%2F%2Fdeveloper.aliyun.com%2Fapp-mobile%2Fscore%3FnavigationBar%3Dfalse%26yunappuuid%3D16927757347529uytoyzurjp\">前往阿里云签到</a>"
+      ],
       "keys": [
         "is_debug",
         "aliyunWeb_data",
@@ -448,19 +452,24 @@
       "icons": [
         "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/aliyun_web.png",
         "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/aliyun_web.png"
-      ],
-      "descs_html": [
-        "🚀 <a target=\"_blank\" href=\"aliyun://forward/sign?target_=/h5&url_=https%3A%2F%2Fdeveloper.aliyun.com%2Fapp-mobile%2Fscore%3FnavigationBar%3Dfalse%26yunappuuid%3D16927757347529uytoyzurjp\">前往阿里云签到</a>"
       ]
     },
     {
       "id": "boxjs_to_ql",
       "name": "boxjs同步ql",
+      "descs_html": [
+        "<b>支持两种模式，请根据需求填写：</b>",
+        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
+        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
+        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
+        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
+      ],
       "keys": [
         "@ql.mute",
         "@ql.sync_env__key",
         "@ql.ip",
         "@ql.port",
+        "ql.baseUrl",
         "@ql.client_id",
         "@ql.client_secret"
       ],
@@ -507,6 +516,14 @@
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         },
         {
+          "id": "ql.baseUrl",
+          "name": "青龙基础URL",
+          "val": "",
+          "type": "text",
+          "persistentHint": false,
+          "desc": ""
+        },
+        {
           "id": "@ql.client_id",
           "name": "青龙面板 Client ID",
           "val": "",
@@ -529,19 +546,18 @@
           "desc": "如果通用，只需填写一个。如果独立，用'@'分隔并与IP顺序对应。"
         }
       ],
+      "scripts": [
+        {
+          "name": "同步变量",
+          "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
+          "iCloudPath": "boxjs_to_ql.js"
+        }
+      ],
       "author": "mumu",
       "repo": "https://github.com/fly818/QX/blob/master/Script/boxjs_to_ql.js",
-      "script": "https://raw.githubusercontent.com/fly818/QX/master/Script/boxjs_to_ql.js",
       "icons": [
         "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png",
         "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
-      ],
-      "descs_html": [
-        "<b>支持两种模式，请根据需求填写：</b>",
-        "<b>1. 通用配置：</b>如果所有面板的端口、Client ID、Secret都相同，则在对应输入框各填写一个通用值即可。",
-        "<b>2. 独立配置：</b>如果每个面板的配置都不同，请在IP、端口、Client ID、Secret输入框中分别填入多个值，用英文符号 '@' 分隔，并确保各项顺序一一对应。",
-        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
-        "青龙 docker 频道：【<a href=\"https://t.me/jiao_long\">电报频道</a>】"
       ]
     },
     {
