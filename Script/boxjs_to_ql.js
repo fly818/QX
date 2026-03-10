@@ -3,7 +3,7 @@
  *@desp       boxjs同步环境变量到多个青龙面板。
  *@env        @ql.sync_env__key, @ql.ip, @ql.port, @ql.baseUrl, @ql.client_id, @ql.client_secret, @ql.mute
  *@author     WowYiJiu & Gemini
- *@updated    2026-03-01
+ *@updated    2026-03-10
  *@link       https://raw.githubusercontent.com/fly818/QX/refs/heads/master/Script/boxjs_to_ql.js
  *@thanks     @dompling: https://github.com/dompling
 
@@ -76,13 +76,13 @@ class QinglongAPI {
     }
 
     async login() {
-        const opt = {
-            url: `${this.url}/open/auth/token?client_id=${this.clientId}&client_secret=${this.clientSecret}`,
-            headers: this.headers,
-            timeout: 5000,
-        };
-        const resp = await $.http.get(opt);
         try {
+            const opt = {
+                url: `${this.url}/open/auth/token?client_id=${this.clientId}&client_secret=${this.clientSecret}`,
+                headers: this.headers,
+                timeout: 5000,
+            };
+            const resp = await $.http.get(opt);
             const data = JSON.parse(resp.body);
             if (data.code === 200 && data.data.token) {
                 this.token = data.data.token;
@@ -100,13 +100,13 @@ class QinglongAPI {
     }
 
     async getEnvs(searchValue = "") {
-        const opt = {
-            url: `${this.url}/open/envs?searchValue=${searchValue}`,
-            headers: this.headers,
-            timeout: 5000,
-        };
-        const resp = await $.http.get(opt);
         try {
+            const opt = {
+                url: `${this.url}/open/envs?searchValue=${searchValue}`,
+                headers: this.headers,
+                timeout: 5000,
+            };
+            const resp = await $.http.get(opt);
             return JSON.parse(resp.body);
         } catch (e) {
             return { code: 500, message: `获取环境变量失败: ${e}` };
@@ -114,14 +114,14 @@ class QinglongAPI {
     }
 
     async addEnvs(envs) {
-        const opt = {
-            url: `${this.url}/open/envs`,
-            headers: this.headers,
-            body: JSON.stringify(envs),
-            timeout: 5000,
-        };
-        const resp = await $.http.post(opt);
         try {
+            const opt = {
+                url: `${this.url}/open/envs`,
+                headers: this.headers,
+                body: JSON.stringify(envs),
+                timeout: 5000,
+            };
+            const resp = await $.http.post(opt);
             return JSON.parse(resp.body);
         } catch (e) {
             return { code: 500, message: `新增环境变量失败: ${e}` };
@@ -129,20 +129,20 @@ class QinglongAPI {
     }
 
     async updateEnv(env) {
-        const body = {
-            name: env.name,
-            value: env.value,
-            remarks: env.remarks,
-            id: env.id
-        };
-        const opt = {
-            url: `${this.url}/open/envs`,
-            headers: this.headers,
-            body: JSON.stringify(body),
-            timeout: 5000,
-        };
-        const resp = await $.http.put(opt);
         try {
+            const body = {
+                name: env.name,
+                value: env.value,
+                remarks: env.remarks,
+                id: env.id
+            };
+            const opt = {
+                url: `${this.url}/open/envs`,
+                headers: this.headers,
+                body: JSON.stringify(body),
+                timeout: 5000,
+            };
+            const resp = await $.http.put(opt);
             return JSON.parse(resp.body);
         } catch (e) {
             return { code: 500, message: `更新环境变量失败: ${e}` };
@@ -282,6 +282,9 @@ class QinglongAPI {
 
             // 一次性获取面板所有环境变量，在本地比对，减少请求次数
             const allEnvsResp = await ql.getEnvs();
+            if (allEnvsResp.code !== 200) {
+                throw new Error(`获取环境变量列表失败 (code: ${allEnvsResp.code}): ${allEnvsResp.message || '未知错误'}`);
+            }
             const allEnvs = allEnvsResp.data || [];
 
             for (const element of panelData) {
@@ -361,6 +364,7 @@ class QinglongAPI {
     }
 
     if ($.getdata("@ql.mute") !== "true") {
+        console.log(`\n${notifySubtitle}\n${notifyBody}`);
         $.notify(title, notifySubtitle, notifyBody);
     } else {
         $.info("已开启静音模式，不发送通知。");
