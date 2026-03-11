@@ -737,6 +737,53 @@
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
       ]
+    },
+    {
+      "id": "tianhong",
+      "name": "天虹抽奖",
+      "keys": [
+        "TianHong_cookie",
+        "TianHong_activityId",
+        "TianHong_excludeKeywords"
+      ],
+      "settings": [
+        {
+          "id": "TianHong_cookie",
+          "name": "cookie",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
+        },
+        {
+          "id": "TianHong_activityId",
+          "name": "抽奖ID",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
+        },
+        {
+          "id": "TianHong_excludeKeywords",
+          "name": "黑名单",
+          "val": "双色球",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": "抽奖标题黑名单，换行或@分割"
+        }
+      ],
+      "author": "",
+      "repo": "",
+      "icons": [
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
+      ]
     }
   ]
 }
