@@ -3,7 +3,7 @@
  *@desp       boxjs同步环境变量到多个青龙面板。
  *@env        @ql.sync_env__key, @ql.ip, @ql.port, @ql.baseUrl, @ql.client_id, @ql.client_secret, @ql.mute
  *@author     WowYiJiu & Gemini
- *@updated    2026-03-10
+ *@updated    2026-03-20
  *@link       https://raw.githubusercontent.com/fly818/QX/refs/heads/master/Script/boxjs_to_ql.js
  *@thanks     @dompling: https://github.com/dompling
 
@@ -115,10 +115,16 @@ class QinglongAPI {
 
     async addEnvs(envs) {
         try {
+            // 通过 map 过滤掉青龙 API 不支持的字段，如 panels
+            const payload = envs.map(env => ({
+                name: env.name,
+                value: env.value,
+                remarks: env.remarks
+            }));
             const opt = {
                 url: `${this.url}/open/envs`,
                 headers: this.headers,
-                body: JSON.stringify(envs),
+                body: JSON.stringify(payload),
                 timeout: 5000,
             };
             const resp = await $.http.post(opt);
