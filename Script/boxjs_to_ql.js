@@ -17,7 +17,7 @@
       第4段可选，不填=同步全部面板，填写=只同步指定面板（逗号分隔，从1开始）
 ⚙ 配置 (Quantumult X)
 [task_local]
-0 0 * * * <YOUR_SCRIPT_URL>, tag=boxjs多面板同步, img-url=https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png, enabled=true
+0 0 * * * https://raw.githubusercontent.com/fly818/QX/refs/heads/master/Script/boxjs_to_ql.js, tag=boxjs多面板同步, img-url=https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png, enabled=true
 */
 
 // 初始化一个API实例，用于后续的网络请求、数据读写等操作
