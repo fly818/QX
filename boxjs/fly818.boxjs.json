@@ -147,8 +147,9 @@
         "Ydwx",
         "cjwlhck",
         "jjjck",
-        "wtwlh",
         "oleck",
+        "wlh",
+        "wtwlh",
         "hrtwx"
       ],
       "settings": [
@@ -183,22 +184,34 @@
           "desc": "请在此处粘贴您的999账号Authorization多账号用“&”连接（抓包：mc.999.com.cn 域名请求头中的 Authorization 值）"
         },
         {
-          "id": "wtwlh",
-          "name": "文体未来荟",
-          "val": "",
-          "type": "textarea",
-          "rows": 5,
-          "autoGrow": false,
-          "persistentHint": false
-        },
-        {
           "id": "oleck",
           "name": "ole超市",
           "val": "",
           "type": "textarea",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
+        },
+        {
+          "id": "wlh",
+          "name": "未来荟",
+          "val": "",
+          "type": "textarea",
+          "rows": 5,
+          "autoGrow": false,
+          "persistentHint": false,
+          "desc": ""
+        },
+        {
+          "id": "wtwlh",
+          "name": "文体未来荟",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
         },
         {
           "id": "hrtwx",
@@ -207,10 +220,12 @@
           "type": "textarea",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         }
       ],
       "author": "@mumu",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/hrt.png"
@@ -220,21 +235,68 @@
       "id": "qc.token",
       "name": "雀巢",
       "keys": [
-        "NESTLE_TOKEN"
+        "NESTLE_TOKEN",
+        "NESTLE_QL_TOTAL",
+        "NESTLE_QL_TASKNAME",
+        "NESTLE_QL_ENVNAME",
+        "NESTLE_QL_REMARK"
       ],
       "settings": [
         {
           "id": "NESTLE_TOKEN",
-          "name": "雀巢会员",
+          "name": "雀巢会员CK",
           "val": "",
           "type": "textarea",
           "rows": 6,
           "autoGrow": false,
           "persistentHint": true,
-          "desc": "有效期30天，过期后清除重新获取。"
+          "desc": ""
+        },
+        {
+          "id": "NESTLE_QL_TOTAL",
+          "name": "触发模式",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "0=即时，N=集齐N个才触发",
+          "persistentHint": true,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
+        },
+        {
+          "id": "NESTLE_QL_TASKNAME",
+          "name": "青龙任务关键字",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "默认 qchy",
+          "persistentHint": true,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
+        },
+        {
+          "id": "NESTLE_QL_ENVNAME",
+          "name": "推送到青龙的变量名",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": "NESTLE_TOKEN/NESTLE_TOKEN1/NESTLE_TOKEN2"
+        },
+        {
+          "id": "NESTLE_QL_REMARK",
+          "name": "青龙变量备注",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 1,
+          "autoGrow": false,
+          "desc": ""
         }
       ],
       "author": "@mumu",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/nestle.jpg"
@@ -254,10 +316,12 @@
           "type": "textarea",
           "rows": 5,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         }
       ],
       "author": "@mumu",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/shyp.png"
@@ -285,41 +349,42 @@
           "name": "账号密码",
           "val": "",
           "type": "textarea",
-          "desc": "手机号1&密码1，多号换行填写。",
           "rows": 3,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "手机号1&密码1，多号换行填写。"
         },
         {
           "id": "ftej_enable",
           "name": "脚本运行总开关",
           "val": true,
           "type": "boolean",
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "ftej_debug",
           "name": "debug",
           "val": false,
           "type": "boolean",
-          "desc": "调试模式开关",
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "调试模式开关"
         },
         {
           "id": "ftej_operate_pika",
           "name": "皮卡生活任务",
           "val": true,
           "type": "boolean",
-          "desc": "执行任务会发送提示短信",
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "执行任务会发送提示短信"
         },
         {
           "id": "ftej_timeout",
           "name": "请求超时时间",
           "val": 30,
           "type": "number",
-          "desc": "网络请求超时时间（单位：秒），可根据网络情况适当调整",
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "网络请求超时时间（单位：秒），可根据网络情况适当调整"
         },
         {
           "id": "ftej_account_delay_min",
@@ -329,7 +394,8 @@
           "min": 30,
           "max": 100,
           "step": 5,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "ftej_account_delay_max",
@@ -339,14 +405,16 @@
           "min": 101,
           "max": 240,
           "step": 5,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "ftej_task_delay_enable",
           "name": "开启子任务间延时",
           "val": true,
           "type": "boolean",
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "ftej_task_delay_min",
@@ -356,7 +424,8 @@
           "min": 5,
           "max": 30,
           "step": 1,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "ftej_task_delay_max",
@@ -366,20 +435,22 @@
           "min": 30,
           "max": 60,
           "step": 1,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "ftej_task_blacklist",
           "name": "任务黑名单",
           "val": "注册,发帖,完善信息,预约维保或紧急救援,服务评价,推荐购车",
           "type": "textarea",
-          "desc": "多个任务用逗号或换行分隔",
           "rows": 2,
           "autoGrow": true,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": "多个任务用逗号或换行分隔"
         }
       ],
       "author": "mumu",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png",
         "https://raw.githubusercontent.com/fly818/QX/master/icon/ftej.png"
@@ -402,53 +473,54 @@
           "name": "开启调试模式",
           "val": false,
           "type": "boolean",
-          "desc": "默认关闭",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "默认关闭"
         },
         {
           "id": "aliyunWeb_data",
           "name": "阿里云社区Cookie数据",
           "val": "",
           "type": "textarea",
-          "desc": "阿里云社区Cookie数据",
           "rows": 3,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "阿里云社区Cookie数据"
         },
         {
           "id": "aliyunWeb_time",
           "name": "阿里云社区控制时间",
           "val": "12",
           "type": "text",
-          "desc": "早于该时间则执行任务，晚于该时间则领取积分，默认: 12(即中午12点，为避免出现乱七八糟的问题，请设置: 1-23的整数)",
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": "早于该时间则执行任务，晚于该时间则领取积分，默认: 12(即中午12点，为避免出现乱七八糟的问题，请设置: 1-23的整数)"
         },
         {
           "id": "aliyunWeb_scene",
           "name": "开启场景任务",
           "val": false,
           "type": "boolean",
-          "desc": "控制是否开启场景任务，默认：关闭(false)",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "控制是否开启场景任务，默认：关闭(false)"
         },
         {
           "id": "aliyunWeb_stock",
           "name": "开启库存查询",
           "val": false,
           "type": "boolean",
-          "desc": "控制是否开启库存查询，默认：关闭(false)",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "控制是否开启库存查询，默认：关闭(false)"
         },
         {
           "id": "aliyunWeb_video",
           "name": "开启视频任务",
           "val": false,
           "type": "boolean",
-          "desc": "控制是否开启视频任务，默认：关闭(false)",
-          "persistentHint": false
+          "persistentHint": true,
+          "desc": "控制是否开启视频任务，默认：关闭(false)"
         }
       ],
       "author": "@leiyiyan",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/aliyun_web.png",
         "https://raw.githubusercontent.com/leiyiyan/resource/main/icons/aliyun_web.png"
@@ -487,11 +559,11 @@
           "name": "同步环境变量规则",
           "val": "",
           "type": "textarea",
-          "placeholder": "boxjs变量名#ql变量名#ql备注-boxjs变量名#ql变量名#ql备注 (禁用)",
+          "placeholder": "boxjs变量名#ql变量名#ql备注#1,2(面板序号）",
           "rows": 5,
           "autoGrow": true,
           "persistentHint": true,
-          "desc": "定义需要同步的变量规则，每行一条。行首加'-'可禁用该条规则。"
+          "desc": "定义需要同步的变量规则，每行一条。boxjs变量名#ql变量名#ql备注#1,2(面板序号）"
         },
         {
           "id": "@ql.ip",
@@ -519,8 +591,10 @@
           "id": "ql.baseUrl",
           "name": "青龙基础URL",
           "val": "",
-          "type": "text",
+          "type": "textarea",
           "persistentHint": false,
+          "rows": 1,
+          "autoGrow": true,
           "desc": ""
         },
         {
@@ -600,7 +674,8 @@
           "type": "textarea",
           "rows": 3,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "bot_secret",
@@ -609,7 +684,8 @@
           "type": "textarea",
           "rows": 3,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "bot_notify_module_url",
@@ -618,7 +694,8 @@
           "type": "textarea",
           "rows": 3,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "bot_notify_module_code",
@@ -627,10 +704,12 @@
           "type": "textarea",
           "rows": 3,
           "autoGrow": false,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         }
       ],
       "author": "mumu",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
@@ -643,7 +722,9 @@
         "XIJIU_LOG_LEVEL",
         "XiJiu_Exchange",
         "OCR_SERVER",
-        "XIJIU_ACCOUNTS"
+        "XIJIU_ACCOUNTS",
+        "JUNPINHUI_TOKEN",
+        "JUNPINHUI_DELAY"
       ],
       "settings": [
         {
@@ -669,7 +750,8 @@
               "label": "error"
             }
           ],
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": ""
         },
         {
           "id": "XiJiu_Exchange",
@@ -686,7 +768,8 @@
           "type": "textarea",
           "rows": 1,
           "autoGrow": true,
-          "persistentHint": false
+          "persistentHint": false,
+          "desc": ""
         },
         {
           "id": "XIJIU_ACCOUNTS",
@@ -695,9 +778,77 @@
           "type": "textarea",
           "rows": 5,
           "autoGrow": false,
-          "persistentHint": true
+          "persistentHint": true,
+          "desc": ""
+        },
+        {
+          "id": "JUNPINHUI_TOKEN",
+          "name": "君品荟token",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
+        },
+        {
+          "id": "JUNPINHUI_DELAY",
+          "name": "君品荟签到间隔时间",
+          "val": 10,
+          "type": "number",
+          "persistentHint": false,
+          "desc": ""
         }
       ],
+      "author": "",
+      "repo": "",
+      "icons": [
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
+        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
+      ]
+    },
+    {
+      "id": "tianhong",
+      "name": "天虹抽奖",
+      "keys": [
+        "TianHong_cookie",
+        "TianHong_activityId",
+        "TianHong_excludeKeywords"
+      ],
+      "settings": [
+        {
+          "id": "TianHong_cookie",
+          "name": "cookie",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": false,
+          "desc": ""
+        },
+        {
+          "id": "TianHong_activityId",
+          "name": "抽奖ID",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": true,
+          "desc": ""
+        },
+        {
+          "id": "TianHong_excludeKeywords",
+          "name": "黑名单",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": false,
+          "rows": 3,
+          "autoGrow": true,
+          "desc": ""
+        }
+      ],
+      "author": "",
+      "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
@@ -733,52 +884,6 @@
         }
       ],
       "author": "mumu",
-      "icons": [
-        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
-        "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_light.png"
-      ]
-    },
-    {
-      "id": "tianhong",
-      "name": "天虹抽奖",
-      "keys": [
-        "TianHong_cookie",
-        "TianHong_activityId",
-        "TianHong_excludeKeywords"
-      ],
-      "settings": [
-        {
-          "id": "TianHong_cookie",
-          "name": "cookie",
-          "val": "",
-          "type": "textarea",
-          "persistentHint": false,
-          "rows": 3,
-          "autoGrow": false,
-          "desc": ""
-        },
-        {
-          "id": "TianHong_activityId",
-          "name": "抽奖ID",
-          "val": "",
-          "type": "textarea",
-          "persistentHint": false,
-          "rows": 3,
-          "autoGrow": false,
-          "desc": ""
-        },
-        {
-          "id": "TianHong_excludeKeywords",
-          "name": "黑名单",
-          "val": "双色球",
-          "type": "textarea",
-          "persistentHint": false,
-          "rows": 3,
-          "autoGrow": false,
-          "desc": "抽奖标题黑名单，换行或@分割"
-        }
-      ],
-      "author": "",
       "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/fly818/QX/refs/heads/master/icon/icon_dark.png",
